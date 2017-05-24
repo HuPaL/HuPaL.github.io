@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Hup, front-end developer</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+
+	<header>
+		<div class="top-menu"></div>
+
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
+	  
+	  <!-- Background -->
+		  <rect x="0" y="0" fill="#BDC9C9" width="100%" height="100%" />
+		  
+		  <!-- Text using the #pattern in defs as the fill -->
+		  <text x="50%" text-anchor="middle" y="20%" dy="0.4em" fill="url(#pattern)" font-family="sonos-logoregular" font-size="30vh">Hup</text>
+		  <text x="50%" text-anchor="middle" y="50%" dy="0.4em" fill="url(#pattern)" font-family="sonos-logoregular" font-size="30vh">Front-End</text>
+		  <text x="50%" text-anchor="middle" y="75%" dy="0.4em" fill="url(#pattern)" font-family="sonos-logoregular" font-size="30vh">Lviv</text>
+		  
+		  
+		  <defs>  
+		    <!-- Da gradient -->
+		    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0">
+		      <stop offset="0%" style="stop-color:#33235b;"/>
+		      <stop offset="25%" style="stop-color:#D62229;"/>
+		      <stop offset="50%" style="stop-color:#E97639;"/>
+		      <stop offset="75%" style="stop-color:#792042;"/>
+		      <stop offset="100%" style="stop-color:#33235b;"/>
+		    </linearGradient>
+		    
+		    <!-- Stitch 2 gradients together for seamless animation  -->
+		    <pattern id="pattern" x="0" y="0" width="300%" height="100%" patternUnits="userSpaceOnUse">
+		      <rect x="0" y="0" width="150%" height="100%" fill="url(#gradient)">
+		        <animate attributeType="XML"
+		                 attributeName="x"
+		                 from="0" to="150%"
+		                 dur="7s"
+		                 repeatCount="indefinite"/>
+		      </rect>
+		      <rect x="-150%" y="0" width="150%" height="100%" fill="url(#gradient)">
+		        <animate attributeType="XML"
+		                 attributeName="x"
+		                 from="-150%" to="0"
+		                 dur="7s"
+		                 repeatCount="indefinite"/>
+		      </rect>
+		    </pattern>
+
+		    <!-- Pull in font -->
+		    <!-- Copied from: http://static.sonos.com/v1/fonts/logo/sonos-logo-regular-webfont.svg -->
+		    <font horiz-adv-x="1024" >
+		      <font-face font-family="sonos-logoregular" units-per-em="2048" ascent="1920" descent="-128" />
+		      <missing-glyph horiz-adv-x="500" />
+		      <glyph unicode="&#xd;" horiz-adv-x="682" />
+		      <glyph unicode=" " />
+		      <glyph unicode="N" horiz-adv-x="812" d="M0 412h150v636l662 -664v1000h-148v-640l-664 664v-996z" />
+		      <glyph unicode="O" horiz-adv-x="1946" d="M470 896q0 210 150 364q148 148 362 148t362 -148q150 -154 150 -364q0 -212 -150 -362t-362 -150t-362 150t-150 362zM620 896q0 -152 106 -258q104 -108 256 -108q154 0 256 108q108 108 108 258q0 148 -108 260q-104 108 -256 108q-148 0 -256 -108 q-106 -110 -106 -260z" />
+		      <glyph unicode="S" horiz-adv-x="674" d="M0 1124q0 -58 26 -110q28 -52 80 -90q32 -26 86 -52q68 -30 124 -46q124 -40 174 -84q34 -30 34 -74q0 -52 -48 -92q-56 -42 -138 -42q-62 0 -122 26q-38 16 -72 40l-118 -80q0 -4 24 -24q24 -24 60 -46q108 -66 228 -66q70 0 132 22q66 24 108 62q44 38 72 92 q24 54 24 110q0 54 -26 110q-28 52 -78 90q-34 28 -88 52q-38 18 -122 46q-122 36 -174 82q-36 32 -36 74q0 54 50 92q54 44 138 44q60 0 120 -26q32 -12 72 -40l120 80q-2 0 -24 24q-18 18 -62 46q-104 64 -226 64q-74 0 -132 -20t-110 -62q-48 -44 -70 -92 q-26 -56 -26 -110z" />
+		      <glyph unicode="&#xa0;" />
+		      <glyph unicode="&#x2000;" horiz-adv-x="704" />
+		      <glyph unicode="&#x2001;" horiz-adv-x="1408" />
+		      <glyph unicode="&#x2002;" horiz-adv-x="704" />
+		      <glyph unicode="&#x2003;" horiz-adv-x="1408" />
+		      <glyph unicode="&#x2004;" horiz-adv-x="469" />
+		      <glyph unicode="&#x2005;" horiz-adv-x="352" />
+		      <glyph unicode="&#x2006;" horiz-adv-x="234" />
+		      <glyph unicode="&#x2007;" horiz-adv-x="234" />
+		      <glyph unicode="&#x2008;" horiz-adv-x="176" />
+		      <glyph unicode="&#x2009;" horiz-adv-x="281" />
+		      <glyph unicode="&#x200a;" horiz-adv-x="78" />
+		      <glyph unicode="&#x202f;" horiz-adv-x="281" />
+		      <glyph unicode="&#x205f;" horiz-adv-x="352" />
+		      <glyph unicode="&#x25fc;" horiz-adv-x="1000" d="M0 0z" />
+		    </font>
+		  </defs>
+		</svg>
+	</header>
+
+	<section class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="h2">About me</h2>
+					<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-2" >
+					<img src="img/my-foto.png" alt="Front-end developer">
+					</div>
+					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+						<p>Hello! My name is Pavlo , I'm a Front-end Developer from Lviv, Ukraine. Creating my projects, I always try to be extraordinary and add state-of-the art solutions to my code.</p>
+						<p> I started working like front-end developer  1 years ago. It was love at first site :) These days I usually work like freelancer.</p>
+						<p>Free time I usually spend on learning new technologies in web development, play football or meet with friends.</p>
+						<p>In the projects I use  collection system gulp, preprocessor SASS, bootstrap-grid and it is very time-saver. In the near future I plan to learn JS frameworks, and styty even steeper front-end developer.</p>
+						<p>Thank you for visiting my site. If you are looking for a front-end developer (it's just me :)). You can see my designs and order a website for yourself.</p>
+						<p>I wish you good luck and write me if you like my site. All social profiles below.</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="my-works">
+		
+		<div class="container">
+			<div class="row">
+				
+				<h2 class="h2">My works</h2>
+				<div class="col-md-6">
+					<div class="my-works-item">
+						<img src="img/Beauty salon.png" alt="Alt">
+						<p>Description</p>
+						<a href="https://hupal.github.io/butterfly/" class="button" target="blanck">View site</a>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="my-works-item">
+						<img src="img/Nail site.png" alt="Alt">
+						<p>Description</p>
+						<a href="https://hupal.github.io/nails" class="button" target="blanck">View site</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="my-works-item">
+						<img src="img/Tajem.png" alt="Alt">
+						<p>Description</p>
+						<a href="https://hupal.github.io/tajem/" class="button" target="blanck">View site</a>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="my-works-item">
+						<img src="img/Designer.png" alt="Alt">
+						<p>Description</p>
+						<a href="https://hupal.github.io/designer/index.html" class="button" target="blanck">View site</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+	<section class="skills">
+
+		<div class="container">
+			<div class="row">
+
+				<h2 class="h2">My skills</h2>
+
+				<div class="col-md-12">
+					<div class="skills-item">
+
+						<ul class="skills-item-skill">
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>JS</li>
+							<li>jQuery</li>
+							<li>Bootstrap</li>
+							<li>SASS</li>
+							<li>GitHub</li>
+							<li>Gulp</li>
+							<li>Scrum</li>
+						</ul>
+
+						<ul class="skills-item-row">
+							<li><div class="html5"></div></li>
+							<li><div class="css3"></div></li>
+							<li><div class="js"></div></li>
+							<li><div class="jquery"></div></li>
+							<li><div class="bootstrap"></div></li>
+							<li><div class="sass"></div></li>
+							<li><div class="github"></div></li>
+							<li><div class="gulp"></div></li>
+							<li><div class="scrum"></div></li>
+						</ul>
+					</div>
+				</div>
+				
+				
+
+			</div>
+		</div>
+
+	</section>
+
+	<footer class="social">
+		<div class="container">
+			<div class="row">
+				
+				<h2 class="h2">Social</h2>
+
+					<div class="col-md-6 col-md-offset-4 col-sm-8 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+	     			<nav class="soc">
+	     				<ul>
+
+	     					<li><a href="https://www.facebook.com/goupik" target="blanck"><i class="fa fa-facebook"></i></a></li>
+	     					<li><a href="https://www.linkedin.com/in/pavlo-hupalo-17865112b" target="blanck"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+	     					<li><a href="https://github.com/HuPaL" target="blanck"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+
+	     				</ul>
+	     			</nav>
+
+	     			<ul class="soc-two">
+	     				<li><i class="fa fa-skype" aria-hidden="true"></i> gupikpavlyk</li>
+	     				<li><i class="fa fa-envelope" aria-hidden="true"></i> pashkogup@gmail.com</li>
+	     				<li><i class="fa fa-mobile" aria-hidden="true"></i> 0507184712, 0934932369</li>
+	     			</ul>
+	     		</div>
+
+			</div>
+		</div>
+	</footer>
+
+	 <div class="top" title="Вверх"><i class="fa fa-angle-double-up"></i></div>
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
