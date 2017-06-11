@@ -39,9 +39,9 @@
 		  <rect x="0" y="0" fill="#BDC9C9" width="100%" height="100%" />
 		  
 		  <!-- Text using the #pattern in defs as the fill -->
-		  <text x="50%" text-anchor="middle" y="20%" dy="0.4em" fill="url(#pattern)" font-family="sonos-logoregular" font-size="30vh">Hup</text>
-		  <text x="50%" text-anchor="middle" y="50%" dy="0.4em" fill="url(#pattern)" font-family="sonos-logoregular" font-size="30vh">Front-End</text>
-		  <text x="50%" text-anchor="middle" y="75%" dy="0.4em" fill="url(#pattern)" font-family="sonos-logoregular" font-size="30vh">Lviv</text>
+		  <text x="50%" text-anchor="middle" y="20%" dy="0.3em" fill="url(#pattern)" font-family="sonos-logoregular" font-size="20vh">Hup</text>
+		  <text x="50%" text-anchor="middle" y="50%" dy="0.3em" fill="url(#pattern)" font-family="sonos-logoregular" font-size="20vh">Front-End</text>
+		  <text x="50%" text-anchor="middle" y="75%" dy="0.3em" fill="url(#pattern)" font-family="sonos-logoregular" font-size="20vh">Lviv</text>
 		  
 		  
 		  <defs>  
@@ -56,7 +56,7 @@
 		    
 		    <!-- Stitch 2 gradients together for seamless animation  -->
 		    <pattern id="pattern" x="0" y="0" width="300%" height="100%" patternUnits="userSpaceOnUse">
-		      <rect x="0" y="0" width="150%" height="100%" fill="url(#gradient)">
+		      <rect x="0" y="0" width="100%" height="100%" fill="url(#gradient)">
 		        <animate attributeType="XML"
 		                 attributeName="x"
 		                 from="0" to="150%"
@@ -107,10 +107,13 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h2 class="h2">About me</h2>
-					<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-2" >
-					<img src="img/my-foto.png" alt="Front-end developer">
+				</div>
+					<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-2 col-xs-7 col-xs-offset-2" >
+						<div class="about-img">
+						<img src="img/my-foto.png" alt="Front-end developer">
+						</div>
 					</div>
-					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
 						<p>Hello! My name is Pavlo , I'm a Front-end Developer from Lviv, Ukraine. Creating my projects, I always try to be extraordinary and add state-of-the art solutions to my code.</p>
 						<p> I started working like front-end developer  1 years ago. It was love at first site :) These days I usually work like freelancer.</p>
 						<p>Free time I usually spend on learning new technologies in web development, play football or meet with friends.</p>
@@ -119,7 +122,7 @@
 						<p>I wish you good luck and write me if you like my site. All social profiles below.</p>
 					</div>
 
-				</div>
+				
 			</div>
 		</div>
 	</section>
@@ -177,32 +180,60 @@
 				<h2 class="h2">My skills</h2>
 
 				<div class="col-md-12">
-					<div class="skills-item">
+					<div class="skilllss">
+						<div class="skillbar clearfix " data-percent="80%">
+							<div class="skillbar-title" style="background: #1F2639;"><span>HTML5</span></div>
+							<div class="skillbar-bar" style="background: #1F2639;"></div>
+							<div class="skill-bar-percent">80%</div>
+					  </div> <!-- End Skill Bar -->
 
-						<ul class="skills-item-skill">
-							<li>HTML5</li>
-							<li>CSS3</li>
-							<li>JS</li>
-							<li>jQuery</li>
-							<li>Bootstrap</li>
-							<li>SASS</li>
-							<li>GitHub</li>
-							<li>Gulp</li>
-							<li>Scrum</li>
-						</ul>
+						<div class="skillbar clearfix " data-percent="80%">
+							<div class="skillbar-title" style="background: #1F2639;"><span>CSS3</span></div>
+							<div class="skillbar-bar" style="background: #1F2639;"></div>
+							<div class="skill-bar-percent">80%</div>
+						</div> <!-- End Skill Bar -->
 
-						<ul class="skills-item-row">
-							<li><div class="html5"></div></li>
-							<li><div class="css3"></div></li>
-							<li><div class="js"></div></li>
-							<li><div class="jquery"></div></li>
-							<li><div class="bootstrap"></div></li>
-							<li><div class="sass"></div></li>
-							<li><div class="github"></div></li>
-							<li><div class="gulp"></div></li>
-							<li><div class="scrum"></div></li>
-						</ul>
+						<div class="skillbar clearfix " data-percent="30%">
+							<div class="skillbar-title" style="background: #1F2639;"><span>JAVASCRIPT</span></div>
+							<div class="skillbar-bar" style="background: #1F2639;"></div>
+							<div class="skill-bar-percent">30%</div>
+						</div> <!-- End Skill Bar -->
+
+						<div class="skillbar clearfix " data-percent="50%">
+							<div class="skillbar-title" style="background: #1F2639;"><span>JQUERY</span></div>
+							<div class="skillbar-bar" style="background: #1F2639;"></div>
+							<div class="skill-bar-percent">50%</div>
+						</div>
+
+						<div class="skillbar clearfix " data-percent="70%">
+							<div class="skillbar-title" style="background: #1F2639;"><span>BOOTSTRAP</span></div>
+							<div class="skillbar-bar" style="background: #1F2639;"></div>
+							<div class="skill-bar-percent">70%</div>
+						</div>
+
+						<div class="skillbar clearfix " data-percent="80%">
+							<div class="skillbar-title" style="background: #1F2639;"><span>SAAS</span></div>
+							<div class="skillbar-bar" style="background: #1F2639;"></div>
+							<div class="skill-bar-percent">80%</div>
+						</div>
+
+						<div class="skillbar clearfix " data-percent="60%">
+							<div class="skillbar-title" style="background: #1F2639;"><span>GULP</span></div>
+							<div class="skillbar-bar" style="background: #1F2639;"></div>
+							<div class="skill-bar-percent">60%</div>
+						</div>
+							<div class="skillbar clearfix " data-percent="60%">
+							<div class="skillbar-title" style="background: #1F2639;"><span>GITHUB</span></div>
+							<div class="skillbar-bar" style="background: #1F2639;"></div>
+							<div class="skill-bar-percent">60%</div>
+						</div>
+						<div class="skillbar clearfix " data-percent="40%">
+							<div class="skillbar-title" style="background: #1F2639;"><span>SCRUM</span></div>
+							<div class="skillbar-bar" style="background: #1F2639;"></div>
+							<div class="skill-bar-percent">40%</div>
+						</div>
 					</div>
+				</div>
 				</div>
 				
 				
@@ -218,7 +249,7 @@
 				
 				<h2 class="h2">Social</h2>
 
-					<div class="col-md-6 col-md-offset-4 col-sm-8 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+					<div class="col-md-12 ">
 	     			<nav class="soc">
 	     				<ul>
 
