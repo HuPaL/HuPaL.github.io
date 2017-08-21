@@ -82,21 +82,21 @@
       
       <div class="tab-content">
         <div id="signup">   
-          <h1>Registrazione</h1>
+          <h1>Sign Up for Free</h1>
           
           <form action="/" method="post">
           
           <div class="top-row">
             <div class="field-wrap">
               <label>
-                Nome<span class="req">*</span>
+                First Name<span class="req">*</span>
               </label>
               <input type="text" required autocomplete="off" />
             </div>
         
             <div class="field-wrap">
               <label>
-                Cognome<span class="req">*</span>
+                Last Name<span class="req">*</span>
               </label>
               <input type="text"required autocomplete="off"/>
             </div>
@@ -104,28 +104,28 @@
 
           <div class="field-wrap">
             <label>
-              Email<span class="req">*</span>
+              Email Address<span class="req">*</span>
             </label>
             <input type="email"required autocomplete="off"/>
           </div>
           
           <div class="field-wrap">
             <label>
-              Numero di telefono<span class="req">*</span>
+              Phone<span class="req">*</span>
             </label>
             <input type="password"required autocomplete="off"/>
           </div>
 
           <div class="field-wrap">
             <label>
-              Parola d'ordine<span class="req">*</span>
+              Set A Password<span class="req">*</span>
             </label>
             <input type="password"required autocomplete="off"/>
           </div>
 
           <div class="field-wrap">
             <label>
-              Conferma parola d'ordine<span class="req">*</span>
+              Confirm Password<span class="req">*</span>
             </label>
             <input type="password"required autocomplete="off"/>
           </div>
@@ -142,20 +142,20 @@
 
 	<div class="form" id="formrr">
         <div id="login">   
-          <h1>Benvenuto!</h1>
+          <h1>Welcome!</h1>
           
           <form action="/" method="post">
           
             <div class="field-wrap">
 	            <label>
-	              Email<span class="req">*</span>
+	              Email Address<span class="req">*</span>
 	            </label>
 	            <input type="email"required autocomplete="off"/>
             </div>
           
 	          <div class="field-wrap">
 	            <label>
-	              Parola d'ordine<span class="req">*</span>
+	              Password<span class="req">*</span>
 	            </label>
 	            <input type="password"required autocomplete="off"/>
 	          </div>
@@ -211,7 +211,40 @@
 				</div>
 
 				<div class="col-md-12 col-sm-12 col-xs-12	">
-					<div class="tradevise-two-block"></div>
+					<div class="tradevise-two-block">
+						<span id="tradingview-copyright">Quote di mercato fornite da <a href="http://it.tradingview.com" rel="nofollow" target="_blank" style="color: #3BB3E4">
+                            TradingView.com
+                          </a></span>
+                        <script src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js">{
+                          "symbols": [
+                            {
+                              "description": "Indice Standard&Poor",
+                              "proName": "INDEX:SPX"
+                            },
+                            {
+                              "description": "Euro Fx/U.S. Dollaro",
+                              "proName": "FX_IDC:EURUSD",
+                              "title": "EUR/USD"
+                            },
+                            {
+                              "description": "FUTURES PETROLIO GREGGIO LEGGERO",
+                              "proName": "NYMEX:CL1!",
+                              "title": "Petrolio Greggio"
+                            },
+                            {
+                              "description": "Oro / U.S. Dollaro Americano",
+                              "proName": "FX_IDC:XAUUSD",
+                              "title": "Oro"
+                            },
+                            {
+                              "description": "Indice MIB",
+                              "proName": "INDEX:MIB"
+                            }
+                          ],
+                          "locale": "it",
+                          "linkPageTemplate": "https://tradvise.com/it/analisi_tecnica.php?tvwidgetsymbol={{proName}}"
+                        }</script>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -306,7 +339,146 @@
 			<div class="row">
 				
 				<div class="col-lg-12">
-					<div class="tradevise-five-textone"></div>
+					<div class="tradevise-five-textone ">
+						
+						<span id="tradingview-copyright">Quote di mercato fornite da <a href="http://it.tradingview.com" rel="nofollow" target="_blank" style="color: #3BB3E4">
+    TradingView.com
+  </a></span>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js">
+{
+  "showChart": true,
+  "locale": "en",
+  "width": "100%",
+  "height": "100%",
+  "largeChartUrl": "https://tradvise.com/it/analisi_tecnica.php",
+  "plotLineColorGrowing": "rgba(60, 188, 152, 1)",
+  "plotLineColorFalling": "rgba(255, 74, 104, 1)",
+  "gridLineColor": "rgba(233, 233, 234, 1)",
+  "scaleFontColor": "rgba(218, 221, 224, 1)",
+  "belowLineFillColorGrowing": "rgba(60, 188, 152, 0.05)",
+  "belowLineFillColorFalling": "rgba(255, 74, 104, 0.05)",
+  "symbolActiveColor": "rgba(242, 250, 254, 1)",
+  "tabs": [
+    {
+      "title": "Forex ",
+      "symbols": [
+        {
+          "s": "FX_IDC:EURUSD",
+          "d": "EUR/USD"
+        },
+        {
+          "s": "FX_IDC:GBPUSD",
+          "d": "GBP/USD"
+        },
+        {
+          "s": "FX_IDC:USDJPY",
+          "d": "USD/JPY"
+        },
+        {
+          "s": "FX_IDC:USDCAD",
+          "d": "USD/CAD"
+        },
+        {
+          "s": "FX_IDC:AUDUSD",
+          "d": "AUD/USD"
+        },
+        {
+          "s": "FX_IDC:NZDUSD",
+          "d": "NZD/USD"
+        }
+      ]
+    },
+    {
+      "title": "Matterie Prime",
+      "symbols": [
+        {
+          "s": "FX_IDC:XAUUSD",
+          "d": "ORO"
+        },
+        {
+          "s": "FX_IDC:XAGUSD",
+          "d": "ARGENTO"
+        },
+        {
+          "s": "FX_IDC:USDWTI",
+          "d": "GREGGIO"
+        },
+        {
+          "s": "FX_IDC:USDBRO",
+          "d": "BRENT"
+        },
+        {
+          "s": "ICEUSA:KC1!",
+          "d": "CAFFE"
+        },
+        {
+          "s": "ICEUSA:JC1!",
+          "d": "GRANO"
+        }
+      ]
+    },
+    {
+      "title": "Indici",
+      "symbols": [
+        {
+          "s": "INDEX:MIB",
+          "d": "MIB ITALIA"
+        },
+        {
+          "s": "INDEX:INX",
+          "d": "S&P 500"
+        },
+        {
+          "s": "INDEX:DAX",
+          "d": "DAX GERMANIA"
+        },
+        {
+          "s": "INDEX:NASX",
+          "d": "NASDAQ"
+        },
+        {
+          "s": "INDEX:NKY",
+          "d": "NIKKEI GIAPPONE"
+        },
+        {
+          "s": "INDEX:HSI",
+          "d": "HANG SENG HONG KONG"
+        }
+      ]
+    },
+    {
+      "title": "Azioni",
+      "symbols": [
+        {
+          "s": "NASDAQ:AAPL",
+          "d": "APPLE"
+        },
+        {
+          "s": "NASDAQ:GOOGL",
+          "d": "GOOGLE"
+        },
+        {
+          "s": "NASDAQ:FB",
+          "d": "FACEBOOK"
+        },
+        {
+          "s": "NASDAQ:AMZN",
+          "d": "AMAZON"
+        },
+        {
+          "s": "CHXEUR:GM",
+          "d": "GENERALI"
+        },
+        {
+          "s": "CHXEUR:FCAM",
+          "d": "FIAT CHRYSLER AUTOMOBILI"
+        }
+      ]
+    }
+  ]
+}
+</script>
+					</div>
 				</div>
 				
 				<div class="col-lg-12">
@@ -314,7 +486,85 @@
 				</div>
 					
 				<div class="col-lg-12">
-					<div class="tradevise-five-texttwo"></div>
+					<div class="tradevise-five-texttwo">
+						
+                            <table id="broker-table" class="table">
+                               <tbody>
+                                   <tr>
+                                       <td style="border-top:none; vertical-align: middle;"><h3>Broker</h3></td>
+                                       <td style="border-top:none; vertical-align: middle;"><img src="img/10brokers.png" alt=""></td>
+                                       <td style="border-top:none; vertical-align: middle;"><img src="img/ufx.png" alt=""></td>
+                                       <td style="border-top:none; vertical-align: middle;"><img src="img/xlr2.png" alt=""></td>
+                                       <td class = "align-left" style="border-top:none;vertical-align: middle;"><img src="img/finex.png" alt=""></td>
+
+                                         
+                                   </tr>
+
+                                   <tr> 
+                                      <td>Valutazione Generale</td>
+                                      <td> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></td>
+                                      <td> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></td>
+                                      <td> </i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></td>
+                                      <td  class = "align-left" > <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></td>
+                                       
+
+                                   </tr>
+
+                                   <tr>
+                                       <td>Deposito Richiesto</td>
+                                        <td> 300 €</td>
+                                         <td> 1000 €</td>
+                                         <td> 500 €</td>
+                                          <td> 1000 €</td>
+                                   </tr>
+
+
+                                    <tr>
+                                       <td> Spread (in PIP)</td>
+                                        <td> Parte da 2 </td>
+                                        <td> Parte da 4 </td>
+                                        <td> Parte da 2.8 </td>
+                                          <td> Parte da 3 </td>
+                                   </tr>
+
+
+                                   <tr> 
+                                       <td> Assistenza </td>
+                                       
+                                         <td><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></td>
+                                         <td> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></td>
+                                         <td>  <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></td>
+                                         <td> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></td>
+                                   
+                                   </tr>
+
+                                    <tr>
+                                       <td> Supporto Lingue </td>
+                                      <td> ENG, ITA</td>
+                                      <td> ENG, ITA</td>
+                                      <td> ENG, ITA</td>
+                                      <td> ENG, ITA</td>
+                                   </tr>
+
+                                   <tr>
+                                       <td> Offerta/Bonus </td>
+                                      <td> Bonus 100% </td>
+                                      <td> Omaggio di 50$ </td>
+                                      <td> Bonus 100% </td>
+                                      <td> Bonus su depositi </td>
+                                   </tr>
+
+                                   <tr>
+                                       <td> Visita Pagina </td>
+                                       <td> <a  href="http://10brokers.com/it/main-2/" class="btn btn-default">    Clicca </a> </td>
+                                      <td> <a  href="https://www.ufx.com/en-GB/" class="btn btn-default">    Clicca </a> </td>
+                                      <td> <a href="https://www.xlrtrade.com/" class="btn btn-default">    Clicca </a> </td>
+                                       <td> <a  href="https://www.finexo.com/" class="btn btn-default">    Clicca </a> </td>
+                                   </tr>
+                               </tbody>
+                           </table>
+                        
+					</div>
 				 </div>
 				
 			</div>
