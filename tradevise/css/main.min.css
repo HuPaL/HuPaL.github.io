@@ -8176,11 +8176,12 @@ body {
   overflow-x: hidden;
   opacity: 1; }
 
-section, header, footer, .tradevise-cell, .forex-two {
+section, header, footer, .tradevise-cell, .forex-two, .tradevise-four {
   position: relative;
   -webkit-background-size: cover;
           background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .preloader {
   position: fixed;
@@ -8452,11 +8453,11 @@ textarea {
   text-align: right; }
 
 .tradevise-head {
-  padding: 10px 0 350px; }
+  padding: 100px 0 350px; }
   .tradevise-head .side-menu {
-    position: absolute;
+    position: fixed;
     left: 0;
-    top: 150px;
+    top: 200px;
     z-index: 100;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -8466,7 +8467,6 @@ textarea {
     .tradevise-head .side-menu nav ul li {
       list-style-type: none;
       margin-bottom: 10px;
-      width: 900px;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -8478,13 +8478,14 @@ textarea {
               flex-direction: row; }
       .tradevise-head .side-menu nav ul li a {
         display: block;
-        width: 50px;
-        height: 50px;
-        background-color: #C0EEFF;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #0a093a;
         text-align: center;
         -webkit-border-radius: 10em;
                 border-radius: 10em;
         padding-top: 10px;
+        margin-top: 10px;
         color: #000;
         font-weight: bold;
         font-family: "Century Gothic";
@@ -8510,7 +8511,7 @@ textarea {
             opacity: 1; }
         .tradevise-head .side-menu nav ul li a span {
           display: inline-block;
-          margin-left: 60px;
+          margin-left: 50px;
           font-size: 20px;
           text-transform: uppercase;
           color: #8de0ff;
@@ -8518,7 +8519,8 @@ textarea {
           opacity: 0;
           -webkit-transition: all 0.5s ease;
           -o-transition: all 0.5s ease;
-          transition: all 0.5s ease; }
+          transition: all 0.5s ease;
+          margin-top: -10px; }
   .tradevise-head .top-line {
     padding: 0 0 0 50px;
     text-align: center; }
@@ -8526,13 +8528,13 @@ textarea {
       text-align: center;
       width: 200px;
       height: 100px;
-      display: inline-block;
-      margin-top: 50px; }
+      display: inline-block; }
       .tradevise-head .top-line .logo img {
-        width: 100px;
+        width: 180px;
         height: auto;
         display: inline-block;
-        margin-left: 6px; }
+        margin-left: 6px;
+        margin-top: -80px; }
     .tradevise-head .top-line .tradevise-menu {
       position: absolute;
       top: 0;
@@ -8589,19 +8591,23 @@ textarea {
 
 .tradevise-two {
   position: relative;
-  padding: 50px 0 400px; }
+  padding: 0 0 100px; }
   .tradevise-two .tradevise-two-text {
     position: relative;
     color: rgba(255, 255, 255, 0.749);
     font-family: "Century Gothic";
-    font-size: 35px; }
+    font-size: 20px;
+    margin-top: -50px;
+    padding: 60px 0; }
     .tradevise-two .tradevise-two-text .tradevise-two-text-cont {
       width: 100%;
       margin: 0;
-      text-align: justify; }
+      font-size: 25px;
+      text-align: center; }
     .tradevise-two .tradevise-two-text .tradevise-two-text-center {
       text-align: center;
-      margin: 0 0 20px 0; }
+      margin: 0 0 20px 0;
+      font-size: 25px; }
   .tradevise-two .tradevise-two-block {
     width: 100%;
     height: 80px;
@@ -8626,34 +8632,54 @@ textarea {
     width: 280px;
     text-decoration: none;
     margin-top: 20px;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease; }
-    .tradevise-three .tradevise-three-item:hover {
-      -webkit-box-shadow: 0 0 20px #fff;
-              box-shadow: 0 0 20px #fff; }
+    outline: none; }
     .tradevise-three .tradevise-three-item .triangle, .tradevise-three .tradevise-three-item .triangle-3 {
       position: relative;
       width: 0;
       height: 0;
-      border-left: 140px solid transparent;
-      border-right: 140px solid transparent;
-      border-bottom: 250px solid rgba(192, 238, 255, 0.2); }
+      border-left: 150px solid transparent;
+      border-right: 150px solid transparent;
+      border-bottom: 270px solid transparent;
+      -webkit-transition: border-bottom 0.5s ease;
+      -o-transition: border-bottom 0.5s ease;
+      transition: border-bottom 0.5s ease; }
       .tradevise-three .tradevise-three-item .triangle img, .tradevise-three .tradevise-three-item .triangle-3 img {
-        width: 200px;
+        width: 170px;
         height: auto;
         opacity: 1;
         position: absolute;
-        top: 130px;
-        left: -100px; }
+        top: 140px;
+        left: -82px; }
+      .tradevise-three .tradevise-three-item .triangle:hover, .tradevise-three .tradevise-three-item .triangle-3:hover {
+        border-bottom: 270px solid #1C5D2F; }
+      .tradevise-three .tradevise-three-item .triangle .triangle-empty, .tradevise-three .tradevise-three-item .triangle-3 .triangle-empty {
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-left: -137px;
+        margin-top: 10px;
+        border-left: 137px solid transparent;
+        border-right: 137px solid transparent;
+        border-bottom: 253px solid #2C3D50; }
+        .tradevise-three .tradevise-three-item .triangle .triangle-empty img, .tradevise-three .tradevise-three-item .triangle-3 .triangle-empty img {
+          width: 170px;
+          height: auto;
+          opacity: 1;
+          position: absolute;
+          top: 140px;
+          left: -82px; }
     .tradevise-three .tradevise-three-item .triangle-reverse {
       position: relative;
       width: 0;
       height: 0;
-      border-left: 140px solid transparent;
-      border-right: 140px solid transparent;
-      border-top: 250px solid rgba(192, 238, 255, 0.2);
-      margin-top: 42px; }
+      border-left: 150px solid transparent;
+      border-right: 150px solid transparent;
+      border-top: 270px solid transparent;
+      -webkit-transition: border-top 0.5s ease;
+      -o-transition: border-top 0.5s ease;
+      transition: border-top 0.5s ease; }
+      .tradevise-three .tradevise-three-item .triangle-reverse:hover {
+        border-top: 270px solid #EA2227; }
       .tradevise-three .tradevise-three-item .triangle-reverse img {
         width: 120px;
         height: auto;
@@ -8661,11 +8687,26 @@ textarea {
         position: absolute;
         top: -240px;
         left: -60px; }
+      .tradevise-three .tradevise-three-item .triangle-reverse .triangle-empty-revers {
+        position: relative;
+        width: 0;
+        height: 0;
+        margin-left: -137px;
+        margin-top: -263px;
+        border-left: 137px solid transparent;
+        border-right: 137px solid transparent;
+        border-top: 253px solid #2C3D50; }
+        .tradevise-three .tradevise-three-item .triangle-reverse .triangle-empty-revers img {
+          width: 120px;
+          height: auto;
+          opacity: 1;
+          position: absolute;
+          top: -240px;
+          left: -60px; }
     .tradevise-three .tradevise-three-item .triangle-3 img {
       width: 150px;
       height: auto;
-      margin-top: -50px;
-      margin-left: 30px; }
+      margin-top: -50px; }
     .tradevise-three .tradevise-three-item .thriangle-text {
       color: rgba(255, 255, 255, 0.749);
       text-align: center;
@@ -8681,11 +8722,13 @@ textarea {
   .tradevise-four h2 {
     font-size: 26px;
     text-transform: uppercase;
-    border-left: 3px solid #0a093a;
+    border-left: 3px solid rgba(255, 255, 255, 0.749);
     font-family: "Century Gothic";
-    color: #0a093a;
+    color: rgba(255, 255, 255, 0.749);
     padding: 10px 20px;
-    font-weight: bold; }
+    font-weight: bold;
+    position: relative;
+    z-index: 100; }
   .tradevise-four .tradevise-grid {
     display: -webkit-box;
     display: -webkit-flex;
@@ -8734,6 +8777,18 @@ textarea {
                 transform: scale(1.05);
         z-index: 20;
         border: 2px solid #C0EEFF; }
+  .tradevise-four::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: -webkit-gradient(linear, left top, right bottom, from(#C8FFFC), to(#01011F));
+    background: -webkit-linear-gradient(top left, #C8FFFC, #01011F);
+    background: -o-linear-gradient(top left, #C8FFFC, #01011F);
+    background: linear-gradient(to bottom right, #C8FFFC, #01011F);
+    opacity: 0.8; }
 
 .tradevise-five {
   position: relative;
@@ -8784,21 +8839,22 @@ textarea {
     border-left: 3px solid rgba(255, 255, 255, 0.749);
     position: absolute;
     top: 40px;
-    left: 30%;
+    left: 20%;
     margin: 0;
     text-transform: uppercase;
     font-weight: bold; }
   .tradevise-who-are .tradevise-who-are-text {
     font-size: 26px;
     text-align: justify;
-    line-height: 1.5;
+    line-height: 1.45;
     margin: 0;
     position: relative;
     left: 50%;
     top: 120px;
-    width: 940px;
-    margin-left: -450px;
-    margin-bottom: 200px; }
+    width: 930px;
+    margin-left: -430px;
+    margin-bottom: 200px;
+    padding: 70px 0; }
 
 .main-footer {
   position: relative;
@@ -9713,9 +9769,6 @@ textarea {
     width: 10%; }
   .video-header .tab-content .video-play {
     height: 300px; }
-  .tradevise-five .tradevise-five-texttwo .table tbody tr td img {
-    width: 70px;
-    height: auto; }
   .main-footer .footer-logo a {
     font-size: 20px; }
     .main-footer .footer-logo a img {
@@ -9725,13 +9778,16 @@ textarea {
     right: 2%; }
     .main-footer .footer-sponsors ul li a img {
       width: 70px;
-      height: auto; } }
+      height: auto; }
+  .forex-two img {
+    width: 460px;
+    height: auto; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .tradevise-two {
     padding-bottom: 100px; }
-    .tradevise-two .tradevise-two-text {
+    .tradevise-two .tradevise-two-text .tradevise-two-text-cont, .tradevise-two .tradevise-two-text .tradevise-two-text-center {
       font-size: 20px; }
   .tradevise-four .tradevise-grid .tradevise-cell h3 {
     left: 10px;
@@ -9774,13 +9830,6 @@ textarea {
         margin-top: -25px;
         left: 50%;
         margin-left: -25px; }
-  .tradevise-five .tradevise-five-texttwo .table {
-    overflow-x: auto;
-    display: block;
-    font-size: 13px; }
-    .tradevise-five .tradevise-five-texttwo .table tbody tr td img {
-      width: 50px;
-      height: auto; }
   .main-footer .footer-logo {
     margin-top: 40px; }
     .main-footer .footer-logo a {
@@ -9793,6 +9842,14 @@ textarea {
     top: 40px; }
     .main-footer .footer-sponsors ul li a img {
       width: 50px;
+      height: auto; }
+  .forex-two img {
+    width: 300px;
+    height: auto; }
+  .tradevise-five .tradevise-five-texttwo .table tbody tr td {
+    padding: 5px 15px; }
+    .tradevise-five .tradevise-five-texttwo .table tbody tr td img {
+      width: 150px;
       height: auto; } }
 
 /* Custom, iPhone Retina */
