@@ -8853,7 +8853,7 @@ textarea {
     right: 50px; }
 
 .back {
-  position: absolute;
+  position: fixed;
   top: 25px;
   left: 25px; }
   .back a {
