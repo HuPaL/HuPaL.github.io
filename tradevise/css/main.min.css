@@ -8313,17 +8313,23 @@ section, header, footer, .tradevise-cell, .forex-two, .tradevise-four {
 
 .tilter {
   position: relative;
-  display: block;
+  display: inline-block;
   -webkit-box-flex: 0;
   -webkit-flex: none;
       -ms-flex: none;
           flex: none;
-  width: 300px;
-  height: 415px;
-  margin: 1.5em 2.5em;
+  width: 550px;
+  height: 550px;
+  margin: 0 0;
+  margin-top: 110px;
+  margin-left: 340px;
   color: #fff;
   -webkit-perspective: 1000px;
-          perspective: 1000px; }
+          perspective: 1000px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  text-decoration: none; }
 
 .tilter * {
   pointer-events: none; }
@@ -8331,13 +8337,15 @@ section, header, footer, .tradevise-cell, .forex-two, .tradevise-four {
 .tilter:hover,
 .tilter:focus {
   color: #fff;
-  outline: none; }
+  outline: none;
+  text-decoration: none; }
 
 .tilter__image {
   display: block;
-  width: 100%;
-  height: 100%;
-  margin: 0; }
+  width: 550px;
+  height: 550px;
+  margin: 0;
+  border: 4px solid rgba(192, 238, 255, 0.5); }
 
 .tilter__figure > * {
   -webkit-transform: translateZ(0px);
@@ -8365,45 +8373,47 @@ section, header, footer, .tradevise-cell, .forex-two, .tradevise-four {
   height: 100%; }
 
 .tilter__deco--overlay {
-  background-image: -webkit-linear-gradient(45deg, rgba(226, 60, 99, 0.4), rgba(145, 58, 252, 0.4), rgba(16, 11, 192, 0.4));
-  background-image: -o-linear-gradient(45deg, rgba(226, 60, 99, 0.4), rgba(145, 58, 252, 0.4), rgba(16, 11, 192, 0.4));
-  background-image: linear-gradient(45deg, rgba(226, 60, 99, 0.4), rgba(145, 58, 252, 0.4), rgba(16, 11, 192, 0.4)); }
+  background-image: rgba(192, 238, 255, 0.2); }
 
 .tilter__deco--shine div {
-  position: absolute;
   top: -50%;
   left: -50%;
   width: 200%;
   height: 200%;
   background-image: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.25) 50%, transparent 100%);
   background-image: -o-linear-gradient(45deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.25) 50%, transparent 100%);
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.25) 50%, transparent 100%); }
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.25) 50%, transparent 100%);
+  margin-top: 40px;
+  margin-left: 40px; }
 
 .tilter__deco--lines {
   fill: none;
   stroke: #fff;
   stroke-width: 1.5px; }
 
-.tilter__caption {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 4em; }
-
 .tilter__title {
   font-family: 'Abril Fatface', serif;
   font-size: 2.5em;
   font-weight: normal;
-  line-height: 1;
-  margin: 0; }
+  line-height: 1.5;
+  margin: 0;
+  margin-top: -50px;
+  margin-left: 15px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
 
 .tilter__description {
   font-size: 0.85em;
   margin: 1em 0 0 0;
-  letter-spacing: 0.15em; }
+  letter-spacing: 0.15em;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
 
 .tradevise-head {
-  padding: 110px 0 350px; }
+  padding: 110px 0 350px;
+    padding-text-align: center; }
   .tradevise-head .side-menu {
     position: fixed;
     left: -25px;
@@ -9662,7 +9672,10 @@ section, header, footer, .tradevise-cell, .forex-two, .tradevise-four {
       left: 30px;
       right: 30px;
       width: 100%;
-      margin-left: 0; } }
+      margin-left: 0; }
+  .tilter {
+    margin-top: 110px;
+    margin-left: 240px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -9698,15 +9711,29 @@ section, header, footer, .tradevise-cell, .forex-two, .tradevise-four {
     font-size: 35px; }
   .video-header .tab-content .video-play {
     width: 100%;
-    display: block; } }
+    display: block; }
+  .tilter {
+    margin-top: 110px;
+    margin-left: 130px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .dropdown, .dropdown1, .dropdown2 {
     display: block;
     text-align: left; }
-  .tradevise-head .tradevise-menu {
-    left: 0; }
+  .tradevise-head {
+    text-align: center; }
+    .tradevise-head .top-line .logo img {
+      margin-left: -50px; }
+    .tradevise-head .tradevise-menu {
+      left: 0; }
+    .tradevise-head .tilter .tilter__title .tradevise-text {
+      position: absolute;
+      font-size: 10px;
+      left: -150px;
+      top: -125px; }
+      .tradevise-head .tilter .tilter__title .tradevise-text .td-text {
+        font-size: 25px; }
   .tradevise-who-are {
     padding-bottom: 50px; }
     .tradevise-who-are h2 {
@@ -9743,7 +9770,15 @@ section, header, footer, .tradevise-cell, .forex-two, .tradevise-four {
       height: auto; }
   .forex-two img {
     width: 460px;
-    height: auto; } }
+    height: auto; }
+  .tilter {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin-left: 0; }
+  .tilter__image {
+    width: 400px;
+    height: 400px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -9825,7 +9860,13 @@ section, header, footer, .tradevise-cell, .forex-two, .tradevise-four {
     height: 25px; }
     .tradevise-head .side-menu nav ul li a span {
       margin-left: 25px;
-      font-size: 14px; } }
+      font-size: 14px; }
+  .tilter {
+    width: 400px;
+    height: 400px; }
+  .tilter__image {
+    width: 400px;
+    height: 400px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
