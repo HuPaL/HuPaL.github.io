@@ -8311,161 +8311,110 @@ section, header, footer, .tradevise-cell, .forex-two, .tradevise-four {
 .dropdown:hover .dropdown-content {
   display: block; }
 
-.form {
-  padding: 40px;
-  max-width: 600px;
-  margin: 40px auto;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
-  -webkit-box-shadow: 0 0 20px #fff;
-          box-shadow: 0 0 20px #fff;
-  position: relative; }
+.tilter {
+  position: relative;
+  display: block;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  width: 300px;
+  height: 415px;
+  margin: 1.5em 2.5em;
+  color: #fff;
+  -webkit-perspective: 1000px;
+          perspective: 1000px; }
 
-.tab-group {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 40px 0; }
-  .tab-group:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .tab-group li a {
-    display: block;
-    text-decoration: none;
-    padding: 15px;
-    background: rgba(160, 179, 176, 0.25);
-    color: #a0b3b0;
-    font-size: 20px;
-    float: left;
-    width: 50%;
-    text-align: center;
-    cursor: pointer;
-    -webkit-transition: .5s ease;
-    -o-transition: .5s ease;
-    transition: .5s ease; }
-    .tab-group li a:hover {
-      background: #58cffb;
-      color: #ffffff; }
-  .tab-group .active a {
-    background: #71d6fc;
-    color: #ffffff; }
+.tilter * {
+  pointer-events: none; }
 
-h1 {
-  color: #ffffff;
-  font-weight: 300;
-  margin: 0 0 40px; }
+.tilter:hover,
+.tilter:focus {
+  color: #fff;
+  outline: none; }
 
-label {
-  position: absolute;
-  -webkit-transform: translateY(6px);
-      -ms-transform: translateY(6px);
-          transform: translateY(6px);
-  left: 13px;
-  color: rgba(255, 255, 255, 0.5);
-  -webkit-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  -webkit-backface-visibility: hidden;
-  pointer-events: none;
-  font-size: 22px; }
-  label .req {
-    margin: 2px;
-    color: #71d6fc; }
-
-label.active {
-  -webkit-transform: translateY(50px);
-      -ms-transform: translateY(50px);
-          transform: translateY(50px);
-  left: 2px;
-  font-size: 14px; }
-  label.active .req {
-    opacity: 0; }
-
-label.highlight {
-  color: #ffffff; }
-
-input, textarea {
-  font-size: 22px;
+.tilter__image {
   display: block;
   width: 100%;
   height: 100%;
-  padding: 5px 10px;
-  background: none;
-  background-image: none;
-  border: 1px solid #a0b3b0;
-  color: #ffffff;
-  -webkit-border-radius: 0;
-          border-radius: 0;
-  -webkit-transition: border-color .25s ease, -webkit-box-shadow .25s ease;
-  transition: border-color .25s ease, -webkit-box-shadow .25s ease;
-  -o-transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease, -webkit-box-shadow .25s ease; }
-  input:focus, textarea:focus {
-    outline: 0;
-    border-color: #71d6fc; }
+  margin: 0; }
 
-textarea {
-  border: 2px solid #a0b3b0;
-  resize: vertical; }
+.tilter__figure > * {
+  -webkit-transform: translateZ(0px);
+          transform: translateZ(0px); }
 
-.field-wrap {
-  position: relative;
-  margin-bottom: 40px; }
+.tilter__figure {
+  position: relative; }
 
-.top-row:after {
-  content: "";
-  display: table;
-  clear: both; }
+.tilter__figure::before {
+  content: '';
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  -webkit-box-shadow: 0 30px 20px rgba(35, 32, 39, 0.5);
+          box-shadow: 0 30px 20px rgba(35, 32, 39, 0.5); }
 
-.top-row > div {
-  float: left;
-  width: 48%;
-  margin-right: 4%; }
-  .top-row > div:last-child {
-    margin: 0; }
+.tilter__deco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%; }
 
-.button {
-  border: 0;
-  outline: none;
-  -webkit-border-radius: 0;
-          border-radius: 0;
-  padding: 15px 0;
-  font-size: 2rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  background: #71d6fc;
-  color: #ffffff;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-appearance: none; }
-  .button:hover, .button:focus {
-    background: #58cffb; }
+.tilter__deco--overlay {
+  background-image: -webkit-linear-gradient(45deg, rgba(226, 60, 99, 0.4), rgba(145, 58, 252, 0.4), rgba(16, 11, 192, 0.4));
+  background-image: -o-linear-gradient(45deg, rgba(226, 60, 99, 0.4), rgba(145, 58, 252, 0.4), rgba(16, 11, 192, 0.4));
+  background-image: linear-gradient(45deg, rgba(226, 60, 99, 0.4), rgba(145, 58, 252, 0.4), rgba(16, 11, 192, 0.4)); }
 
-.button-block {
-  display: block;
-  width: 100%; }
+.tilter__deco--shine div {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.25) 50%, transparent 100%);
+  background-image: -o-linear-gradient(45deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.25) 50%, transparent 100%);
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.25) 50%, transparent 100%); }
 
-.forgot {
-  margin-top: -20px;
-  text-align: right; }
+.tilter__deco--lines {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1.5px; }
+
+.tilter__caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 4em; }
+
+.tilter__title {
+  font-family: 'Abril Fatface', serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0; }
+
+.tilter__description {
+  font-size: 0.85em;
+  margin: 1em 0 0 0;
+  letter-spacing: 0.15em; }
 
 .tradevise-head {
-  padding: 100px 0 350px; }
+  padding: 110px 0 350px; }
   .tradevise-head .side-menu {
     position: fixed;
-    left: 0;
+    left: -25px;
     top: 200px;
     z-index: 100;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease; }
-    .tradevise-head .side-menu.active {
-      left: 0; }
     .tradevise-head .side-menu nav ul li {
       list-style-type: none;
+      margin: 0;
       margin-bottom: 10px;
       display: -webkit-box;
       display: -webkit-flex;
@@ -8480,7 +8429,7 @@ textarea {
         display: block;
         width: 40px;
         height: 40px;
-        border: 2px solid #0a093a;
+        border: 2px solid #42A1B2;
         text-align: center;
         -webkit-border-radius: 10em;
                 border-radius: 10em;
@@ -8528,13 +8477,15 @@ textarea {
       text-align: center;
       width: 200px;
       height: 100px;
-      display: inline-block; }
+      display: inline-block;
+      position: relative;
+      z-index: 100; }
       .tradevise-head .top-line .logo img {
         width: 180px;
         height: auto;
         display: inline-block;
-        margin-left: 6px;
-        margin-top: -80px; }
+        margin-left: 8px;
+        margin-top: -110px; }
     .tradevise-head .top-line .tradevise-menu {
       position: absolute;
       top: 0;
@@ -8565,9 +8516,8 @@ textarea {
         .tradevise-head .top-line .tradevise-menu .main-lang:hover .lang {
           display: block; }
   .tradevise-head .tradevise-text {
-    padding-top: 10px;
-    padding-left: 40px;
-    margin-top: 200px;
+    padding-left: 50px;
+    margin-top: 170px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -8811,16 +8761,18 @@ textarea {
     font-family: "Century Gothic"; }
   .tradevise-five .tradevise-five-texttwo {
     font-family: "Century Gothic";
-    background-color: #fff;
+    background-color: #efefef;
     width: 100%;
     border: 5px solid #C0EEFF;
     -webkit-border-radius: 20px;
             border-radius: 20px;
     text-align: center;
     overflow-x: scroll; }
-    .tradevise-five .tradevise-five-texttwo .table tbody tr td img {
-      width: 100px;
-      height: auto; }
+    .tradevise-five .tradevise-five-texttwo .table tbody tr td {
+      border-top: none; }
+      .tradevise-five .tradevise-five-texttwo .table tbody tr td img {
+        width: 100px;
+        height: auto; }
     .tradevise-five .tradevise-five-texttwo .fa {
       color: #ffc603; }
 
@@ -8911,12 +8863,13 @@ textarea {
 .back {
   position: fixed;
   top: 25px;
-  left: 25px; }
+  left: 25px;
+  z-index: 100; }
   .back a {
     text-transform: uppercase;
     font-family: "Century Gothic";
     color: #C0EEFF;
-    font-size: 25px;
+    font-size: 22px;
     text-shadow: 0 0 10px #000;
     font-weight: bold;
     -webkit-transition: all 0.25s ease;
@@ -9156,6 +9109,12 @@ textarea {
 .forex-two .forex-table-item {
   border-bottom: none; }
 
+.forex-two .spoiler-title {
+  cursor: pointer; }
+
+.forex-two .spoiler-body {
+  display: none; }
+
 .commodities-header .tradevise-three-item .triangle img {
   width: 170px;
   height: auto;
@@ -9249,7 +9208,7 @@ textarea {
 .analisi-block {
   margin-top: 50px;
   width: 100%;
-  height: 800px;
+  height: 680px;
   border: 2px solid #C0EEFF; }
   .analisi-block .analisi-video {
     width: 100%;
@@ -9679,6 +9638,7 @@ textarea {
   .tradevise-who-are h2 {
     left: 15%; }
   .tradevise-who-are .tradevise-who-are-text {
+    margin-bottom: 50px;
     left: 15%; }
   .tradevise-two .tradevise-two-text {
     font-size: 30px; }
@@ -9697,7 +9657,7 @@ textarea {
   .tradevise-who-are {
     padding-bottom: 100px; }
     .tradevise-who-are h2 {
-      left: 30px; }
+      left: 200px; }
     .tradevise-who-are .tradevise-who-are-text {
       padding-right: 50px;
       left: 30px;
@@ -9724,16 +9684,16 @@ textarea {
       border: 2px solid #C0EEFF; }
   .tradevise-head .tradevise-menu {
     right: 0; }
-  .tradevise-who-are {
-    padding-bottom: 50px; }
-    .tradevise-who-are h2 {
-      left: 30px; }
-    .tradevise-who-are .tradevise-who-are-text {
-      left: 30px;
-      right: 30px;
-      width: 100%;
-      margin-left: 0; }
+  .tradevise-who-are h2 {
+    left: 130px; }
+  .tradevise-who-are .tradevise-who-are-text {
+    left: 30px;
+    right: 30px;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 50px; }
   .tradevise-two .tradevise-two-text {
+    margin-left: -120px;
     font-size: 20px; }
   .tradevise-two .tradevise-two-text {
     font-size: 35px; }
@@ -9757,23 +9717,26 @@ textarea {
       left: 40px;
       right: 30px;
       width: 100%;
-      bottom: 50px;
+      margin-bottom: 50px;
       margin-left: 0; }
   .tradevise-two {
     padding-bottom: 200px; }
     .tradevise-two .tradevise-two-text {
-      font-size: 25px; }
+      font-size: 25px;
+      margin-left: -50px; }
       .tradevise-two .tradevise-two-text .tradevise-two-text-cont {
         text-align: center; }
   .dropdown {
     width: 10%; }
   .video-header .tab-content .video-play {
     height: 300px; }
-  .main-footer .footer-logo a {
-    font-size: 20px; }
-    .main-footer .footer-logo a img {
-      width: 80px;
-      height: auto; }
+  .main-footer .footer-logo {
+    margin-left: 20px; }
+    .main-footer .footer-logo a {
+      font-size: 20px; }
+      .main-footer .footer-logo a img {
+        width: 80px;
+        height: auto; }
   .main-footer .footer-sponsors {
     right: 2%; }
     .main-footer .footer-sponsors ul li a img {
@@ -9787,18 +9750,25 @@ textarea {
 @media only screen and (max-width: 480px) {
   .tradevise-two {
     padding-bottom: 100px; }
-    .tradevise-two .tradevise-two-text .tradevise-two-text-cont, .tradevise-two .tradevise-two-text .tradevise-two-text-center {
-      font-size: 20px; }
+    .tradevise-two .tradevise-two-text {
+      margin-left: 0; }
+      .tradevise-two .tradevise-two-text .tradevise-two-text-cont, .tradevise-two .tradevise-two-text .tradevise-two-text-center {
+        font-size: 20px; }
   .tradevise-four .tradevise-grid .tradevise-cell h3 {
     left: 10px;
     font-size: 25px; }
-  .tradevise-who-are {
-    padding-bottom: 50px; }
-    .tradevise-who-are h2 {
-      left: 10px; }
-    .tradevise-who-are .tradevise-who-are-text {
-      width: 100%;
-      font-size: 20px; }
+  .tradevise-who-are h2 {
+    left: 50px;
+    font-size: 25px; }
+  .tradevise-who-are .tradevise-who-are-text {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 50px; }
+  .tradevise-head .top-line .logo {
+    margin-top: 20px; }
+    .tradevise-head .top-line .logo img {
+      width: 150px;
+      height: auto; }
   .tradevise-four .tradevise-grid {
     display: -webkit-box;
     display: -webkit-flex;
@@ -9850,7 +9820,13 @@ textarea {
     padding: 5px 15px; }
     .tradevise-five .tradevise-five-texttwo .table tbody tr td img {
       width: 150px;
-      height: auto; } }
+      height: auto; }
+  .tradevise-head .side-menu nav ul li a {
+    width: 25px;
+    height: 25px; }
+    .tradevise-head .side-menu nav ul li a span {
+      margin-left: 25px;
+      font-size: 14px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
