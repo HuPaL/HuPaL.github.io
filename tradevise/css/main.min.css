@@ -9452,6 +9452,9 @@ section, header, footer, .tradevise-cell, .forex-two, .tradevise-four {
 .next-st {
   padding: 0; }
 
+.forex-bg {
+  background: none; }
+
 .img-responsive {
   display: block;
   max-width: 100%;
