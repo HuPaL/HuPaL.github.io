@@ -8294,7 +8294,8 @@ section, header, footer, .tradevise-cell, .forex-two, .tradevise-four {
   border: none;
   cursor: pointer;
   text-transform: uppercase;
-  background-color: transparent; }
+  background-color: transparent;
+  z-index: 2000; }
 
 .dropdown, .dropdown1, .dropdown2 {
   position: relative;
@@ -8633,7 +8634,8 @@ section, header, footer, .tradevise-cell, .forex-two, .tradevise-four {
     margin-top: -150px;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    transition: all 0.5s ease; }
+    transition: all 0.5s ease;
+    z-index: 2000; }
     .tradevise-head .side-menu nav ul li {
       list-style-type: none;
       margin: 0;
@@ -8719,7 +8721,8 @@ section, header, footer, .tradevise-cell, .forex-two, .tradevise-four {
     .tradevise-head .top-line .tradevise-menu {
       position: absolute;
       top: 0;
-      right: 50px; }
+      right: 50px;
+      z-index: 2000; }
       .tradevise-head .top-line .tradevise-menu li {
         display: inline-block;
         padding: 10px 20px;
