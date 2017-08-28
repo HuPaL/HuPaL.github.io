@@ -9078,7 +9078,8 @@ section, header, footer, .tradevise-cell, .forex-two, .tradevise-four {
     font-weight: bold;
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
-    transition: all 0.25s ease; }
+    transition: all 0.25s ease;
+    outline: none; }
     .back a .fa {
       margin-right: 5px; }
     .back a:hover {
@@ -9320,10 +9321,12 @@ section, header, footer, .tradevise-cell, .forex-two, .tradevise-four {
 .forex-two .spoiler-body {
   display: none; }
 
-.commodities-header .tradevise-three-item .triangle img {
-  width: 170px;
-  height: auto;
-  margin-top: -50px; }
+.commodities-header {
+  padding: 0; }
+  .commodities-header .tradevise-three-item .triangle img {
+    width: 170px;
+    height: auto;
+    margin-top: -50px; }
 
 .trade {
   background-color: #E2E7E9; }
@@ -9436,6 +9439,18 @@ section, header, footer, .tradevise-cell, .forex-two, .tradevise-four {
   color: #fff; }
   .btn-default:hover {
     background-color: #00b300; }
+
+.trade-tradvs {
+  padding: 0; }
+
+.forex-header {
+  padding: 0; }
+
+.stock-header {
+  padding: 0; }
+
+.next-st {
+  padding: 0; }
 
 .img-responsive {
   display: block;
