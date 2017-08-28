@@ -8189,14 +8189,15 @@ section, header, footer, .tradevise-cell, .forex-two, .tradevise-four {
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 9999;
   background-color: #0a093a; }
   .preloader .pulse {
     position: relative;
     left: 50%;
     top: 50vh;
     margin-left: -40px;
-    margin-right: -40px; }
+    margin-right: -40px;
+    z-index: 9999; }
     .preloader .pulse::before, .preloader .pulse::after {
       content: '';
       border: 5px solid #C0EEFF;
@@ -8634,8 +8635,7 @@ section, header, footer, .tradevise-cell, .forex-two, .tradevise-four {
     margin-top: -150px;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    z-index: 2000; }
+    transition: all 0.5s ease; }
     .tradevise-head .side-menu nav ul li {
       list-style-type: none;
       margin: 0;
@@ -8722,7 +8722,7 @@ section, header, footer, .tradevise-cell, .forex-two, .tradevise-four {
       position: absolute;
       top: 0;
       right: 50px;
-      z-index: 2000; }
+      z-index: 10; }
       .tradevise-head .top-line .tradevise-menu li {
         display: inline-block;
         padding: 10px 20px;
