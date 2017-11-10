@@ -185,7 +185,7 @@
 	<div class="container">
 		<div class="row">
 
-			<div class="col-md-3">
+			<div class="col-md-6">
 				<div class="chart-text">
 					<h2>Title</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error unde saepe tenetur maiores sapiente molestias, consequatur quia pariatur mollitia. Soluta, eos esse, molestiae totam laboriosam ex pariatur voluptas. Libero, quos.</p>
@@ -193,41 +193,57 @@
 				</div>
 			</div>
 
-			<div class="col-md-9">
-				<div class="chart-graph">
-					<span id="tradingview-copyright"><a ref="nofollow noopener" target="_blank" href="http://ru.tradingview.com" style="color: rgb(173, 174, 176); font-family: &quot;Trebuchet MS&quot;, Tahoma, Arial, sans-serif; font-size: 13px;">Котировки предоставлены <span style="color: #3BB3E4">TradingView</span></a></span>
-					<script src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js">{
-						"symbols": [
+			<div class="col-md-6">
+				<!-- TradingView Widget BEGIN -->
+				<span id="tradingview-copyright"><a ref="nofollow noopener" target="_blank" href="http://uk.tradingview.com" style="color: rgb(173, 174, 176); font-family: &quot;Trebuchet MS&quot;, Tahoma, Arial, sans-serif; font-size: 13px;">Market Quotes by <span style="color: #3BB3E4">TradingView</span></a></span>
+				<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js">
+					{
+						"showChart": true,
+						"locale": "uk",
+						"width": "100%",
+						"height": "100%",
+						"plotLineColorGrowing": "rgba(255, 0, 0, 1)",
+						"plotLineColorFalling": "rgba(255, 0, 0, 1)",
+						"gridLineColor": "rgba(233, 233, 234, 1)",
+						"scaleFontColor": "rgba(0, 0, 0, 1)",
+						"belowLineFillColorGrowing": "rgba(255, 0, 0, 0.55)",
+						"belowLineFillColorFalling": "rgba(255, 0, 0, 0.55)",
+						"symbolActiveColor": "rgba(152, 152, 152, 1)",
+						"tabs": [
 						{
-							"description": "USDJPY",
-							"proName": "OANDA:USDJPY"
-						},
-						{
-							"description": "AUDUSD",
-							"proName": "OANDA:AUDUSD"
-						},
-						{
-							"description": "USDCAD",
-							"proName": "OANDA:USDCAD"
-						},
-						{
-							"description": "EURUSD",
-							"proName": "OANDA:EURUSD"
-						},
-						{
-							"description": "GBPUSD",
-							"proName": "OANDA:GBPUSD"
+							"title": "Forex",
+							"symbols": [
+							{
+								"s": "FX:EURUSD"
+							},
+							{
+								"s": "FX:GBPUSD"
+							},
+							{
+								"s": "FX:USDJPY"
+							},
+							{
+								"s": "FX:USDCHF"
+							},
+							{
+								"s": "FX:AUDUSD"
+							},
+							{
+								"s": "FX:USDCAD"
+							}
+							]
 						}
-						],
-						"locale": "ru"
-					}</script>
-
-				</div>
+						]
+					}
+				</script>
+				<!-- TradingView Widget END -->
 
 			</div>
 
 		</div>
+
 	</div>
+</div>
 </section>
 
 <section class="chart-two" style="background-image: url(img/bg4.jpg);">
@@ -368,13 +384,13 @@
 
 			<div class="col-md-12">
 				<div class="main-footer-title">
-						<a href="#">binarkets<span>.com</span></a>
-						<div class="soc">
-							<a href="#" class="fb"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-							<a href="#" class="vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
-							<a href="#" class="ins"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							<a href="#" class="yt"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-						</div>
+					<a href="#">binarkets<span>.com</span></a>
+					<div class="soc">
+						<a href="#" class="fb"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+						<a href="#" class="vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
+						<a href="#" class="ins"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="#" class="yt"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+					</div>
 				</div>
 			</div>
 			
