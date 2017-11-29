@@ -9148,7 +9148,7 @@ body {
 /*====END HEADER-SLIDER=====*/
 /*====START BINARKETS-ICON=====*/
 .binarkets-icons {
-  padding: 80px 0 40px 0;
+  padding: 40px 0;
   background-color: white;
   display: -webkit-box;
   display: -webkit-flex;
@@ -9174,15 +9174,15 @@ body {
     z-index: 110 !important;
     margin: 5px 20px; }
     .binarkets-icons .binarkets-icons-item:hover {
-      -webkit-transform: translateY(-50px);
-          -ms-transform: translateY(-50px);
-              transform: translateY(-50px); }
+      -webkit-transform: translateY(-30px);
+          -ms-transform: translateY(-30px);
+              transform: translateY(-30px); }
     .binarkets-icons .binarkets-icons-item img {
-      width: 100px;
+      width: 50px;
       margin-bottom: 20px; }
     .binarkets-icons .binarkets-icons-item h4 {
       color: #CC0000;
-      font-size: 22px;
+      font-size: 16px;
       margin: 0; }
     .binarkets-icons .binarkets-icons-item p {
       color: #000;
@@ -9205,7 +9205,7 @@ body {
 
 .trading-services {
   position: relative;
-  padding: 0 0 20px 0; }
+  padding: 20px 0; }
   .trading-services h2 {
     font-size: 50px;
     color: #37474f;
@@ -9525,14 +9525,15 @@ body {
 /*====END MAIN-FOOTER=====*/
 /*====START MODAL-CONTENT=====*/
 .modal-content {
-  background-color: rgba(0, 0, 255, 0.2);
+  background-color: rgba(255, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 15px #fff;
           box-shadow: 0 0 15px #fff;
   margin-top: 100px; }
   .modal-content .close {
-    color: red; }
+    color: #000;
+    font-size: 20px; }
   .modal-content h4 {
-    color: #CC0000;
+    color: #fff;
     font-size: 30px;
     font-weight: bold;
     text-align: center; }
@@ -9579,6 +9580,8 @@ body {
     .news-item .news-item-text .news-text {
       font-size: 14px; }
 
+/*====END MARKET NEWS=====*/
+/*====START WEBINARS=====*/
 .eventCalendar-currentTitle .eventCalendar-monthTitle {
   background-color: #CC0000; }
 
@@ -9598,6 +9601,72 @@ body {
 .webinars-slide {
   height: 100px !important;
   padding: 0 0 150px 0; }
+
+.eventCalendar-slider, .eventCalendar-monthWrap {
+  height: 400px !important; }
+
+.eventCalendar-daysList.eventCalendar-showAsWeek {
+  height: 400px !important; }
+
+.eventCalendar-daysList.eventCalendar-showAsWeek li {
+  height: 60px; }
+
+.eventCalendar-showAsWeek .eventCalendar-day a {
+  width: 100%;
+  height: 100%;
+  line-height: 60px; }
+
+.eventCalendar-currentTitle .eventCalendar-monthTitle {
+  padding: 15px 0; }
+
+.eventCalendar-wrap .eventCalendar-arrow {
+  top: 8px; }
+
+/*====END WEBINARS=====*/
+.f-a-wrapper {
+  padding: 20px 0; }
+  .f-a-wrapper .f-a-wrapper-title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .f-a-wrapper .f-a-wrapper-title img {
+      width: 120px;
+      height: 90px;
+      display: block; }
+    .f-a-wrapper .f-a-wrapper-title h3 {
+      margin-left: 10px;
+      font-weight: bold; }
+      .f-a-wrapper .f-a-wrapper-title h3 a {
+        -webkit-transition: color 0.4s ease;
+        -o-transition: color 0.4s ease;
+        transition: color 0.4s ease; }
+        .f-a-wrapper .f-a-wrapper-title h3 a:hover {
+          color: #CC0000; }
+  .f-a-wrapper .f-a-wrapper-date {
+    margin: 10px 0; }
+    .f-a-wrapper .f-a-wrapper-date .fa {
+      margin-right: 10px; }
+
+.f-a-wrapper-text .button-f-a {
+  border: 1px solid #999;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  outline: none; }
+  .f-a-wrapper-text .button-f-a:hover {
+    background-color: #CC0000;
+    color: #fff; }
 
 .img-responsive {
   display: block;
@@ -9626,7 +9695,9 @@ body {
   .trading-services .trading-services-item {
     min-height: 300px; }
     .trading-services .trading-services-item .trading-services-item-overlay {
-      width: 75%; } }
+      width: 75%; }
+  .webinars-slide {
+    height: 200px !important; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -9644,7 +9715,9 @@ body {
             flex-wrap: wrap; }
   .main-footer .main-footer-title a img {
     width: 140px;
-    height: auto; } }
+    height: auto; }
+  .navbar-brand {
+    margin-left: -12px !important; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {

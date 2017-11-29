@@ -72,8 +72,8 @@
 								<li><a href="marcket-news.html">Market news</a></li>
 								<li><a href="economic-calendar.html">Economic calendar</a></li>
 								<li><a href="webinars.html">Webinars</a></li>
-								<li><a href="#">Foundamental analysis</a></li>
-								<li><a href="#">Technical analysis</a></li>
+								<li><a href="fondamental-analysis.html">Foundamental analysis</a></li>
+								<li><a href="technical-analysis.html">Technical analysis</a></li>
 							</ul>
 						</li>
 
@@ -123,7 +123,7 @@
 		<div class="row">
 
 			<div class="col-md-12">
-				<div id="eventCalendar" style="width: 100%; margin: 50px auto;"></div>
+				<div id="eventCalendar" style="width: 100%; height: 500px; margin: 50px auto;"></div>
 
 				<script src="https://code.jquery.com/jquery.min.js"></script>
 
@@ -131,10 +131,10 @@
 				<script>
 					$(function(){
 						var data = [
-						{ "date": "2017-11-29 10:15:20", "title": "Событие 1", "description": "Lorem Ipsum dolor set", "url": "http://www.event3.com/" },
-						{ "date": "2017-04-18 10:15:20", "title": "Событие 2", "description": "Lorem Ipsum dolor set", "url": "" },
-						{ "date": "2017-04-01 10:15:20", "title": "Событие 3", "description": "Lorem Ipsum dolor set", "url": "http://www.event3.com/" },
-						{ "date": "2017-04-25 10:15:20", "title": "Событие 4", "description": "Lorem Ipsum dolor set", "url": "http://www.event3.com/" },
+						{ "date": "2017-11-29 10:15:20", "title": "Event 1", "description": "Lorem Ipsum dolor set", "url": "http://www.event3.com/" },
+						{ "date": "2017-04-18 10:15:20", "title": "Event 2", "description": "Lorem Ipsum dolor set", "url": "" },
+						{ "date": "2017-04-01 10:15:20", "title": "Event 3", "description": "Lorem Ipsum dolor set", "url": "http://www.event3.com/" },
+						{ "date": "2017-04-25 10:15:20", "title": "Event 4", "description": "Lorem Ipsum dolor set", "url": "http://www.event3.com/" },
 						];
 						$('#eventCalendar').eventCalendar({
 							jsonData: data,
@@ -145,23 +145,23 @@
 							dateFormat: 'DD-MM-YYYY',
 							showDescription: false,
 							locales: {
-								locale: "ru",
-								txt_noEvents: "Нет запланированных событий",
+								locale: "en",
+								txt_noEvents: "No events",
 								txt_SpecificEvents_prev: "",
-								txt_SpecificEvents_after: "события:",
-								txt_NextEvents: "Следующие события:",
-								txt_GoToEventUrl: "Смотреть",
+								txt_SpecificEvents_after: "events:",
+								txt_NextEvents: "Next event:",
+								txt_GoToEventUrl: "See",
 								moment: {
-									"months" : [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-									"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
-									"monthsShort" : [ "Янв", "Фев", "Мар", "Апр", "Май", "Июн",
-									"Июл", "Авг", "Сен", "Окт", "Ноя", "Дек" ],
-									"weekdays" : [ "Воскресенье", "Понедельник","Вторник","Среда","Четверг",
-									"Пятница","Суббота" ],
-									"weekdaysShort" : [ "Вс","Пн","Вт","Ср","Чт",
-									"Пт","Сб" ],
-									"weekdaysMin" : [ "Вс","Пн","Вт","Ср","Чт",
-									"Пт","Сб" ]
+									"months" : [ "January", "February", "March", "April", "May", "June",
+									"July", "August ", "September", "October", "November", "December" ],
+									"monthsShort" : [ "Jan", "Feb", "Mar", "Apr", "May", "June",
+									"July", "Aug", "Sept", "Oct", "Nov", "Dec" ],
+									"weekdays" : [ "Sunday", "Monday","Tuesday","Wednesday","Thursday",
+									"Friday","Saturday" ],
+									"weekdaysShort" : [ "Sun","Mon","Tue","Wed","Thu",
+									"Fri","Sat" ],
+									"weekdaysMin" : ["Sun","Mon","Tue","Wed","Thu",
+									"Fri","Sat" ]
 								}
 							}
 						});
@@ -247,7 +247,7 @@
 			<div class="col-md-2 col-sm-6 col-xs-4">
 				<div class="footer-aplications">
 					<a href="#" class="fb"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-					<a href="#" class="vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
+					<a href="#" class="vk"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
 					<a href="#" class="ins"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 					<a href="#" class="yt"><i class="fa fa-youtube" aria-hidden="true"></i></a>
 				</div>
