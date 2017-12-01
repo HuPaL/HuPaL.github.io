@@ -1,0 +1,1038 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'Open Sans', sans-serif
+	overflow-x: hidden
+	opacity: 1
+
+
+@mixin opacity($opacity)
+  opacity: $opacity / 100
+  filter: alpha(opacity=$opacity)
+
+.preloader
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  z-index: 1100
+  background-color: #fff
+  .pulse
+    position: relative
+    left: 50%
+    top: 50vh
+    width: 80px
+    height: 80px
+    margin-left: -40px
+    margin-top: -40px
+    &::before, &::after
+      content: "" 
+      border: 5px solid $accent
+      width: 80px
+      height: 80px
+      border-radius: 500px
+      position: absolute
+    &::before
+      animation: pulse-outer 0.8s ease-in infinite
+    &::after
+      animation: pulse-inner 0.8s linear infinite
+
+@keyframes pulse-outer
+  0%
+    @include opacity(100)
+  50%
+    @include opacity(50)
+  100%
+    @include opacity(0)
+
+@keyframes pulse-inner
+  0%
+    @include opacity(0)
+    transform: scale(0)
+  100%
+    @include opacity(100)
+    transform: scale(1)
+
+.animated-header
+  border-bottom: 1px solid #000!important
+  padding: 10px 0
+  background-color: red!important
+  transition: all 0.5s ease
+  position: fixed
+  top: 0
+
+.button
+  display: inline-block
+  position: relative
+  padding: 10px 35px
+  text-transform: uppercase
+  color: $accent
+  background-color: #fff
+  font-size: 20px
+  transition: all 0.5s ease
+  animation: transform-but 2s ease-in infinite
+  &:hover, &:focus
+    background-color: $accent
+    color: #fff
+    text-decoration: none
+    font-weight: bold
+
+@keyframes transform-but
+  0%
+    transform: scale(0.9)
+  50%
+    transform: scale(1)
+  100%
+    transform: scale(1.15)
+
+.button-tariffs
+  padding: 8px 20px
+  animation: none
+  font-size: 16px
+  transition: border 0.5s ease
+  border: 1px solid $accent
+  &:hover
+    border: 1px solid $accent
+
+/*====STYLE BOOTSTRAP MENU=====*/
+
+.navbar-default
+  background-image: none
+  background-color: rgba(255, 255, 255, 0.6)
+  border: none
+  margin: 0
+  box-shadow: none
+  position: relative
+
+.navbar-header
+  padding: 10px 0
+  font-weight: bold
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form
+  background-color: transparent
+
+.navbar-brand
+  font-size: 30px
+  font-weight: 500
+  margin-left: -30px!important
+  img
+    width: 250px
+    height: auto
+    margin-top: -13px
+    transition: transform 0.5s ease
+    &:hover
+      transform: scale(1.05)
+
+
+.navbar-nav>li>.dropdown-menu
+  background-color: rgba(0, 0, 0, 0.3)
+
+
+.navbar-collapse
+  .nav
+    .dropdown
+      &:hover
+        .dropdown-menu
+          display: block
+      .dropdown-menu
+        li
+          &:hover
+            background-color: transparent!important
+          a
+            width: 100%
+            color: #efefef!important
+            font-size: 14px
+            padding: 3px 10px
+            &:hover
+              color: $accent!important
+      .dropdown-menu-market
+        left: 0
+      .dropdown-menu-partners
+        left: 15px
+    li
+      padding: 10px 0
+      margin: 0
+      a
+        font-family: 'Open Sans', sans-serif
+        position: relative
+        transition: all 0.5s ease
+        display: inline-block
+        font-size: 16px
+        color: #000
+        &::after
+          content: ""
+          display: block
+          width: 0%
+          height: 2px
+          background-color: $accent
+          position: absolute
+          left: 50%
+          transition: width 0.5s ease
+          transform: translateX(-50%)
+        &:hover
+          color: $accent
+          &::after
+            width: 100%
+        img
+          width: 25px
+          height: 15px
+          margin-right: 5px
+
+.navbar-default .navbar-toggle
+  border: none
+
+.navbar-default .navbar-toggle .icon-bar 
+  background-color: #000
+  width: 30px
+
+.navbar-default .navbar-toggle .span1
+  width: 15px
+  transition: all 0.5s ease
+
+.navbar-default .navbar-toggle .span2
+  width: 20px
+  transition: all 0.5s ease
+
+.navbar-default .navbar-toggle .span3
+  width: 25px
+  transition: all 0.5s ease
+
+.navbar-default .navbar-toggle
+  &:hover, &:focus
+    background-color: transparent
+    .span1, .span2, .span3
+      background-color: $accent
+      width: 30px
+.navbar-collapse .nav li a img
+  width: 25px
+  height: 25px
+  margin-right: 5px
+.navbar-collapse .nav li a .en-img, .pl-img
+  width: 25px
+  height: 18px
+  margin-right: 5px
+
+.navbar-collapse .nav li a .pl-img
+  width: 25px
+  height: 18px
+  margin-right: 5px
+
+
+/*====END STYLE BOOTSTRAP MENU=====*/
+
+/*====START HEADER-SLIDER=====*/
+.header-slider
+  position: relative
+  padding: 0 0 250px 0
+  background-size: cover
+  background-position:  center
+  background-repeat: no-repeat
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    display: block
+    //background-color: rgba(0, 0, 255, 0.2)
+    background: url("../img/black-twill.png") top left repeat
+  .header-slider-text
+    padding: 0 20px
+    color: #fff
+    z-index: 100
+    margin-top: 200px
+    .header-slider-text-one
+      font-size: 25px
+      text-shadow: 0 7px 20px #000
+    h2
+      font-size: 60px
+      font-weight: bold
+      color: #fff
+      text-shadow: 0 7px 25px #000
+    p
+      span
+        text-transform: uppercase
+    .header-slider-text-two
+      font-size: 20px
+
+.slide-one
+  position: relative
+  z-index: 100
+/*====END HEADER-SLIDER=====*/
+
+/*====START BINARKETS-ICON=====*/
+.binarkets-icons
+  padding: 40px 0
+  background-color: rgb(255, 255, 255)
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  flex-wrap: wrap
+  .binarkets-icons-item
+    text-align: center
+    transition: all 1s ease
+    position: relative
+    z-index: 110!important
+    margin: 5px 20px
+    &:hover
+      transform: translateY(-30px)
+    img
+      width: 50px
+      margin-bottom: 20px
+    h4
+      color: $accent
+      font-size: 16px
+      margin: 0
+    p
+      color: #000
+      margin: 0
+      font-size: 13px
+/*====END HEADER-SLIDER=====*/
+
+/*====START CHART=====*/
+.chart
+  position: relative
+  padding: 100px 0
+  .chart-widget
+    width: 100%
+    height: 600px
+    background-color: #37474f
+  .chart-text
+    text-align: justify
+  .chart-graph
+    height: 500px
+
+
+.trading-services
+  position: relative
+  padding: 20px 0
+  h2
+    font-size: 50px
+    color: #37474f
+    font-weight: bold
+  .trading-services-item
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    width: 100%
+    min-height: 450px
+    display: flex
+    flex-direction: row
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 450px
+      background-color: rgba(0, 0, 255, 0.2)
+    .trading-services-item-overlay
+      position: relative
+      z-index: 100
+      padding: 50px 50px
+      color: #fff
+      width: 50%
+      &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, 0.4)
+      h3, p, ul
+        margin: 0
+        position: relative
+        z-index: 100
+      h3
+        font-size: 40px
+        font-weight: bold
+        padding: 20px 0
+        border-bottom: 1px solid #cdcdcd
+      p
+        padding: 30px 0
+        text-align: justify
+      .button
+        animation: none
+        font-weight: bold
+        background-color: transparent
+        border: 1px solid #fff
+        color: #fff
+        padding: 10px 15px
+        font-size: 14px
+        transition: all 0.5s ease
+        &:hover
+          background-color: #FFF
+          color: $accent
+  .trading-services-item2
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 450px
+      background-color: rgba(0, 0, 255, 0.3)
+
+/*====START TARIFFS=====*/
+
+.pricingTable
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5)
+  padding: 20px 0
+  text-align: center
+  margin-top: 30px
+  color: #292929
+  perspective: 700px
+  z-index: 1
+  position: relative
+  transition: all 0.3s ease-in-out 0s
+  .pricingTable-title
+    font-size: 30px
+    margin-bottom: 20px
+    color: $accent
+    font-weight: bold
+    span
+      font-size: 18px
+      color: #000
+  .pricingTable-wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    background-color: #e4e4e4
+    padding: 20px 0
+    transition: all 0.5s ease
+    .pricingTabl-left
+      width: 50%
+      border-right: 1px solid #000
+  &:hover
+    color: #fff
+    .pricingTable-wrap
+      background-color: lighten($accent, 20%)
+    .pricingTable-title
+      color: #fff
+  &:after
+    content: ""
+    width: 100%
+    height: 100%
+    background: $accent
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0
+    z-index: -1
+    transform: rotateY(70deg)
+    transition: all 0.3s ease-in-out 0s
+  &:hover:after
+    opacity: 1
+    transform: rotateY(0deg)
+  .icon
+    width: 69px
+    height: 69px
+    line-height: 69px
+    border-radius: 50%
+    background: #fff
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1)
+    margin: 0 auto
+    font-size: 25px
+    color: $accent
+    position: absolute
+    top: -34px
+    left: 0
+    right: 0
+  .pricingTable-header
+    margin-bottom: 30px
+  .title
+    display: block
+    font-size: 18px
+    font-weight: 600
+    text-transform: uppercase
+    margin: 0 0 10px 0
+  .price-value
+    display: inline-block
+    border-bottom: 5px solid $accent
+    font-size: 30px
+    font-weight: 700
+    transition: all 0.3s ease-in-out 0s
+  &:hover .price-value
+    border-bottom-color: #fff
+  .pricing-content
+    list-style: none
+    padding: 0
+    margin: 0 0 20px 0
+    li
+      font-size: 14px
+      line-height: 40px
+      span
+        font-weight: bold
+  .pricingTable-signup
+    display: inline-block
+    padding: 9px 23px
+    font-size: 14px
+    font-weight: 600
+    color: $accent
+    text-transform: uppercase
+    position: relative
+    transition: all 0.25s ease-in-out 0s
+    margin-top: 12px
+    border: 1px solid $accent
+  &:hover .pricingTable-signup
+    background: #fff
+    color: $accent
+    &:before
+      left: -12px
+      border-right: 12px solid $accent
+    &:after
+      right: -12px
+      border-left: 12px solid $accent
+  &:hover .pricingTable-signup
+    &:before
+      border-right-color: #fff
+    &:after
+      border-left-color: #fff
+
+@media only screen and (max-width: 990px)
+  .pricingTable
+    margin-bottom: 30px
+
+@media only screen and (max-width: 767px)
+  .pricingTable
+    margin-bottom: 50px
+
+.pricingTable-wrap2
+  background-color: #e4e4e4
+  padding: 20px 0
+  transition: all 0.5s ease
+  &:hover
+    background-color: lighten($accent, 20%)
+
+.tariffs
+  position: relative
+  padding: 30px 0 80px 0
+  background-color: #efefef
+  h2
+    text-align: center
+    font-size: 50px
+    color: #000
+    margin-bottom: 40px
+  .tariffs-item-adv
+    transform: scale(1.1)
+  .tariffs-item
+    border: 1px solid #efefef
+    padding: 20px 10px
+    text-align: left
+    transition: transform 0.5s ease
+    margin-top: 20px
+    box-shadow: 0 0 10px #fff
+    background-color: #FFF
+    &:hover
+      transform: scale(1.05)
+      p
+        color: $accent
+    img
+      width: 130px
+    h4
+      text-align: left
+      font-size: 50px
+      text-transform: uppercase
+      line-height: 0.6
+      font-family: 'Barlow Condensed', sans-serif;
+      span
+        text-transform: none
+        font-size: 30px
+    .advancedp
+      color: $accent
+    .vipp
+      color: #000
+    p
+      text-align: center
+      font-size: 60px
+      color: blue
+      transition: color 0.5s ease
+      font-family: 'Barlow Condensed', sans-serif;
+      color: green
+      margin: 0
+      span
+        font-family: 'Open Sans', sans-serif
+        font-size: 45px
+    ul
+      margin: 0
+      padding: 0
+      li
+        list-style-type: none
+        padding: 10px 0
+        border-top: 1px solid #efefef
+        font-size: 15px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        .yes
+          color: $accent
+/*====END TARIFFS=====*/
+
+/*====START NAGRODU=====*/
+.nagrodu
+  position: relative
+  padding: 50px 0
+  border-bottom: 1px solid #999
+  .nagrodu-title
+    text-align: center
+    color: #000
+    h3
+      font-size: 50px
+      margin-bottom: 40px
+  .nagrodu-img
+    padding: 20px 0
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    img
+      width: 150px
+      height: 150px
+/*====END NAGRODU=====*/
+
+/*====START PARTNERS=====*/
+.partners
+  .partners-img
+    padding: 30px 0 50px 0
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    img
+      width: 120px
+      height: 60px
+      margin-top: 10px
+/*====END PARTNERS=====*/
+
+/*====START MAIN-FOOTER=====*/
+.main-footer
+  position: relative
+  padding: 50px 0
+  background-color: #37474f
+  .footer-aplications
+    a
+      img
+        width: 180px
+        height: auto
+  .main-footer-list
+    margin-top: 40px
+    color: #fff
+    ul
+      list-style-type: none
+      margin: 0
+      padding: 0
+      li
+        a
+          font-size: 13px
+          padding: 3px 0
+          font-weight: lighter
+          font-family: "RobotoThin",sans-serif
+          color: #eceff1
+  .main-footer-text
+    margin-top: 40px
+    color: #fff
+    text-align: justify
+    font-size: 13px
+    color: #eceff1
+  .main-footer-title
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    a
+      color: #fff
+      text-decoration: none
+      font-size: 45px
+      margin: 0
+      padding: 0
+      font-weight: bold
+      img
+        width: 180px
+        height: auto
+      .fa
+        font-size: 25px
+        margin: 0 10px
+      span
+        font-size: 32px
+        font-weight: normal
+.footer-aplications
+  margin-top: 30px
+  a
+    color: #fff
+    font-size: 25px
+    margin: 0 5px
+  .fb, .vk, .ins, .yt
+    transition: color 0.5s ease
+.footer-aplications
+  .fb
+    &:hover
+      color: #4267B2
+  .vk
+    &:hover
+      color: #5181B8
+  .ins
+    &:hover
+      color: #9A34B2
+  .yt
+    &:hover
+      color: #FF0000
+/*====END MAIN-FOOTER=====*/
+
+/*====START MODAL-CONTENT=====*/
+.modal-content
+  background-color: rgba(255, 0, 0, 0.5)
+  box-shadow: 0 0 15px #fff
+  margin-top: 100px
+  .close
+    color: #000
+    font-size: 20px
+  h4
+    color: #fff
+    font-size: 30px
+    font-weight: bold
+    text-align: center
+.modal-body
+  text-align: center
+  .button
+    animation: none
+    border: none
+  input
+    display: block
+    width: 100%
+    margin: 10px 0
+    padding: 5px 10px
+    border: none
+
+/*====END MODAL-CONTENT=====*/
+
+/*====START MARKET NEWS=====*/
+.news-item
+  display: flex
+  flex-direction: row
+  padding: 20px 0 10px 0
+  border-bottom: 1px solid #bfbfbf
+  .news-item-img
+    img
+      width: 120px
+      height: auto
+  .news-item-text
+    margin-left: 20px
+    h4, p
+      margin: 0
+      padding: 0
+    h4
+      font-weight: bold
+    .news-date
+      font-size: 12px
+    .news-text
+      font-size: 14px
+
+/*====END MARKET NEWS=====*/   
+
+/*====START WEBINARS=====*/
+.eventCalendar-currentTitle .eventCalendar-monthTitle
+  background-color: $accent
+
+.eventCalendar-daysList li.today a
+  background-color: $accent
+
+.eventCalendar-list .eventCalendar-noEvents
+  background-color: rgb(55, 71, 79)
+
+
+
+.webinars-wrap
+  h2
+    color: #fff
+    z-index: 100
+    font-size: 40px
+    position: relative
+    margin-left: 5px
+
+.webinars-slide
+  height: 100px!important
+  padding: 0 0 150px 0
+
+
+.eventCalendar-slider, .eventCalendar-monthWrap
+  height: 400px!important
+
+.eventCalendar-daysList.eventCalendar-showAsWeek
+  height: 400px!important
+
+.eventCalendar-daysList.eventCalendar-showAsWeek li
+  height: 60px
+
+.eventCalendar-showAsWeek .eventCalendar-day a
+  width: 100%
+  height: 100%
+  line-height: 60px
+
+
+.eventCalendar-currentTitle .eventCalendar-monthTitle
+  padding: 15px 0
+
+.eventCalendar-wrap .eventCalendar-arrow
+  top: 8px
+
+/*====END WEBINARS=====*/
+
+
+.f-a-wrapper
+  padding: 20px 0
+  .f-a-wrapper-title
+    display: flex
+    flex-direction: row
+    img
+      width: 120px
+      height: 90px
+      display: block
+    h3
+      margin-left: 10px
+      font-weight: bold
+      a
+        transition: color 0.4s ease
+        &:hover
+          color: $accent
+  .f-a-wrapper-date
+    margin: 10px 0
+    .fa
+      margin-right: 10px
+
+.f-a-wrapper-text
+  .button-f-a
+    border: 1px solid #999
+    padding: 10px 20px
+    font-size: 14px
+    color: #000
+    font-weight: bold
+    text-decoration: none
+    transition: all 0.5s ease
+    outline: none
+    &:hover
+      background-color: $accent
+      color: #fff
+
+
+.form 
+  background: rgba($form-bg, .9)
+  padding: 40px
+  max-width: 600px
+  margin: 40px auto
+  border-radius: $br
+  box-shadow: 0 4px 10px 4px rgba($form-bg, .3)
+
+
+.tab-group 
+  list-style: none
+  padding: 0
+  margin: 0 0 40px 0
+  &:after 
+    content: ""
+    display: table
+    clear: both
+  
+  li a 
+    display: block
+    text-decoration: none
+    padding: 15px
+    background: rgba($gray-light,.25)
+    color: $gray-light
+    font-size: 20px
+    float: left
+    width: 50%
+    text-align: center
+    cursor: pointer
+    transition: .5s ease
+    &:hover 
+      background: $accent
+      color: $white
+    
+  
+  .active a 
+    background: $accent
+    color: $white
+  
+
+
+.tab-content > div:last-child 
+  display: none
+
+
+
+h1 
+  text-align: center
+  color: $white
+  font-weight: $thin
+  margin: 0 0 40px
+
+
+label 
+  position: absolute
+  transform: translateY(6px)
+  left: 13px
+  color: rgba($white,.5)
+  transition: all 0.25s ease
+  -webkit-backface-visibility: hidden
+  pointer-events: none
+  font-size: 22px
+  .req 
+    margin: 2px
+    color: $accent
+  
+
+
+label.active 
+  transform: translateY(50px)
+  left: 2px
+  font-size: 14px
+  .req 
+    opacity: 0
+  
+
+
+label.highlight 
+  color: $white
+
+
+input, textarea 
+  font-size: 22px
+  display: block
+  width: 100%
+  height: 100%
+  padding: 10px 15px
+  background: none
+  background-image: none
+  border: 1px solid $gray-light
+  color: $white
+  border-radius: 0
+  transition: border-color .25s ease, box-shadow .25s ease
+  &:focus 
+    outline: 0
+    border-color: $accent
+
+
+
+
+textarea 
+  border: 2px solid $gray-light
+  resize: vertical
+
+
+.field-wrap 
+  position: relative
+  margin-bottom: 40px
+
+
+.top-row 
+  &:after 
+    content: ""
+    display: table
+    clear: both
+  > div 
+    float: left
+    width: 50%
+
+.input-agree
+  margin-bottom: 50px
+  text-align: left
+  input
+    width: 15px
+    height: 15px
+    margin-top: 20px
+    display: inline-block
+  label
+    margin-left: 20px
+  a
+    margin-left: 100px  
+    font-size: 23px
+    color: #fff 
+
+
+.button-form
+  border: 0
+  outline: none
+  border-radius: 0
+  padding: 15px 0
+  font-size: 2rem
+  font-weight: $bold
+  text-transform: uppercase
+  letter-spacing: .1em
+  background: $accent
+  color: $white
+  transition: all.5s ease
+  -webkit-appearance: none
+  &:hover, &:focus 
+    background: lighten($accent, 15%)
+  
+
+
+.button-block 
+  display: block
+  width: 100%
+
+
+.forgot 
+  margin-top: -20px
+  text-align: right
+
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+@import "media" // Всегда в конце
