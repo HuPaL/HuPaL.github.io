@@ -9442,7 +9442,7 @@ body {
       border-right: 1px solid #000; }
   .pricingTable:hover {
     color: #fff; }
-    .pricingTable:hover .pricingTable-wrap {
+    .pricingTable:hover .pricingTable-wrap, .pricingTable:hover .pricingTable-wrap2 {
       background-color: #ff3333; }
     .pricingTable:hover .pricingTable-title {
       color: #fff; }
@@ -9549,8 +9549,6 @@ body {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
-  .pricingTable-wrap2:hover {
-    background-color: #ff3333; }
 
 .tariffs {
   position: relative;
