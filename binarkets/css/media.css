@@ -1,0 +1,589 @@
+@media (max-width: 1199px) {
+
+    .bg-head {
+        min-height: 100%;
+    }
+
+    .bg-tranding h2 {
+        font-size: 28px;
+        margin: 68px 0 66px;
+    }
+
+    .contact h2 {
+        font-size: 30px;
+    }
+
+    .grafic h2 {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .grafic ul {
+        font-size: 14px;
+    }
+
+    .about {
+        width: 440px;
+        margin: 50px 0 0 0;
+    }
+
+    .about h1 {
+        font-size: 36px;
+        margin-top: 50px;
+    }
+
+    .about h1 span {
+        font-size: 46px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .form-block .title {
+        font-size: 18px;
+        padding: 25px 20px 20px 10px;
+    }
+
+    .form-block {
+        margin-bottom: 86px;
+    }
+
+    .btn {
+        font-size: 18px;
+    }
+
+    /*.chart-padding {
+        width: 400px;
+    }
+
+    .mini-chart-wrap {
+        width: 570px;
+    }
+
+    .grafic-block {
+        width: 570px;
+    }*/
+
+    .phone-list li {
+        font-size: 22px;
+    }
+
+    .grafic-text {
+        padding: 0 580px 0 0;
+    }
+
+    .crofr,
+    .en-lang .crofr {
+        right: 20px;
+        bottom: -40px;
+    }
+
+    .mac-iframe {
+        width: 518px;
+        height: 438px;
+        padding: 19px 19px 149px 19px;
+    }
+    .ar .phone-list li {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .form-block {
+        width: 250px;
+    }
+
+    .form-box {
+        padding: 0 18px;
+    }
+
+    .form-block .title {
+        font-size: 16px;
+        padding: 18px 40px 8px 10px;
+    }
+
+    .first-input {
+        padding: 15px 0 0;
+    }
+
+    .checkbox-rules {
+        font-size: 10px;
+        padding: 0 0 0 20px;
+    }
+
+    .checkbox-rules label {
+        margin-bottom: 0;
+    }
+
+    .form-box button {
+        margin-bottom: 15px;
+    }
+
+    .form-box .col-xs-6 {
+        width: 100%;
+    }
+
+    .form-box:before, .en-lang .form-box:before {
+        width: 99px;
+        height: 99px;
+        background: url(../images/bg-form.png);
+        background-size: contain;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    .bg-head {
+        background: url(../images/bg.png) center top no-repeat;
+        background-size: cover;
+        min-height: 100%;
+    }
+
+    .crofr,
+    .en-lang .crofr {
+        background: url(../images/crovf-landing-w.png) no-repeat;
+        background-size: contain;
+        height: 80px;
+        width: 80px;
+        right: 82px;
+        bottom: -22px;
+    }
+
+    .en-lang .crofr {
+        background: url(../images/crovf-landing-w-en.png) no-repeat;
+        background-size: contain;
+    }
+
+    .logo-small {
+        width: 140px;
+        height: 28px;
+    }
+
+    .grafic {
+        padding: 70px 0;
+    }
+
+    .grafic-text {
+        padding: 0 480px 0 0;
+    }
+
+    .grafic h2 {
+        font-size: 16px;
+    }
+
+    .grafic ul {
+        margin-bottom: 30px;
+    }
+
+    .tranding-text {
+        padding: 0;
+    }
+
+    .pc-img {
+        margin: -73px 0 18px;
+    }
+
+    /*.chart-padding {
+        width: 300px;
+    }
+
+    .mini-chart-wrap {
+        width: 470px;
+    }
+
+    .grafic-block {
+        width: 470px;
+    }*/
+
+    .contact-list {
+        padding: 0 0 0 60px;
+    }
+
+    .contact-list li {
+        font-size: 22px;
+        margin: 21px 0;
+    }
+
+    .phone-list i {
+        font-size: 60px;
+        top: 10px;
+    }
+
+    .phone-list {
+        padding: 0 0 0 70px;
+    }
+
+    .phone-list li {
+        font-size: 18px;
+    }
+
+    .grafic ul li i {
+        float: none;
+        margin: 0 10px 0 -30px;
+        vertical-align: bottom;
+    }
+    .ar .phone-list li {
+        font-size: 22px;
+    }
+    .ar .contact-list {
+        padding: 0 80px 0 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .about h1 {
+        font-size: 32px;
+    }
+
+    .about h1 span {
+        font-size: 42px;
+    }
+
+    .crofr, .en-lang .crofr {
+        right: 82px;
+        bottom: -22px;
+    }
+
+    .about {
+        float: none;
+        width: 100%;
+        margin: 20px 0 0 0;
+        padding: 0 20%;
+        text-align: center;
+    }
+
+    .about a {
+        display: inline-block;
+    }
+
+    .form-block {
+        float: none;
+        width: 60%;
+        margin: 45px auto;
+    }
+
+    .logo {
+        float: none;
+        text-align: center;
+    }
+
+    .cert-crofr {
+        float: right;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .bg-gradient img {
+        max-width: 100%;
+    }
+
+    .copirights {
+        padding: 0;
+    }
+
+    .grafic {
+        padding: 40px 0;
+    }
+
+    .grafic-block {
+        width: 670px;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+
+    .grafic-text {
+        padding: 0 0 20px;
+    }
+
+    .chart-padding {
+        width: 75%;
+    }
+
+    .mini-chart-btn-cont {
+        width: 25%;
+    }
+
+    .mc-btn span {
+        font-size: 20px;
+    }
+
+    .mc-btn {
+        padding: 10px 10px 10px 20px;
+    }
+
+    .mini-chart-wrap {
+        width: 100%;
+    }
+
+    .grafic-block {
+        width: 100%;
+    }
+
+    .contact-list {
+        padding: 0 0 0 0;
+    }
+
+    .phone-list i {
+        font-size: 46px;
+    }
+
+    .phone-list {
+        padding: 0 0 30px 60px;
+    }
+
+    .contact-list i {
+        margin: 0 0 0 -50px;
+    }
+
+    .contact-list li {
+        font-size: 24px;
+        padding: 0 0 0 60px;
+        margin: 0;
+    }
+    .ar .phone-list {
+        padding: 0px 70px 0 0;
+        margin-top: 35px;
+    }
+    .ar .contact-list {
+        padding: 0px 11px 0 0;
+    }
+    .ar .contact-list li {
+        padding: 0px 59px 0 0;
+    }
+    .ar .contact-list i {
+        margin: 0px -62px 0 0;
+    }
+    .ar .about, .ar .form-block {
+        float: none;
+    }
+    .deal-finish-popup-lose h2.dfp-head{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 680px) {
+    .about h1 {
+        font-size: 28px;
+    }
+
+    .about h1 span {
+        font-size: 38px;
+    }
+
+    .crofr, .en-lang .crofr {
+        right: 50%;
+        margin: 0 -190px 0 0;
+        bottom: -30px;
+    }
+}
+
+@media (max-width: 600px){
+    .mac-iframe {
+        width: 400px;
+        height: 337px;
+        padding: 14px 14px 114px 14px;
+    }
+}
+
+@media (max-width: 550px) {
+    .mc-btn span {
+        font-size: 16px;
+    }
+
+    .grafic .grafic-price li {
+        padding: 15px 16px;
+    }
+
+    .wde-legend {
+        margin-top: 60px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .wait-deal-end .chart-timer {
+        font-size: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .ar .phone-list li {
+        font-size: 18px;
+    }
+}
+@media (max-width: 479px) {
+
+    .about {
+        padding: 0 20px;
+    }
+
+    .about h1 {
+        font-size: 18px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .about h1 span {
+        font-size: 28px;
+    }
+
+    .about p {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    .crofr, .en-lang .crofr {
+        margin: 0 -90px 0 0;
+        bottom: -62px;
+    }
+
+    .form-block {
+        width: 100%;
+        margin: 75px auto 45px auto;
+    }
+
+    .bg-tranding h2 {
+        font-size: 22px;
+        margin: 43px 0 51px;
+    }
+
+    .bg-gradient {
+        border-left: 6px solid #d80f0f;
+        padding: 60px 20px 20px 20px;
+        font-size: 12px;
+    }
+
+    .btn.btn-red {
+        font-size: 14px;
+    }
+
+    .grafic h2.dfp-head {
+        font-size: 18px;
+        margin: 20px 0 0 0;
+    }
+
+    .dfp-foot {
+        padding: 0 10px;
+        margin: 5px 0 0 0;
+    }
+
+    .left-foot {
+        float: none;
+    }
+
+    .right-foot {
+        float: none;
+    }
+
+    .center-foot {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    a.restart {
+        font-size: 18px;
+        top: 0;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    a.restart i {
+        top: 2px;
+        font-size: 24px;
+    }
+
+    .btn-grafic {
+        white-space: nowrap;
+        display: inline-block;
+    }
+
+    .grafic .grafic-price {
+        padding: 0 100px 0 0;
+    }
+
+    .grafic .grafic-price li:last-child {
+        width: 100px;
+        margin: 0 -100px 0 0;
+    }
+
+    .grafic .grafic-price li b {
+        padding: 17px 0 0;
+        font-size: 18px;
+    }
+
+    .grafic .grafic-price li span {
+        font-size: 10px;
+    }
+
+    .grafic .grafic-price li {
+        padding: 15px 6px;
+        font-size: 22px;
+    }
+
+    .mc-btn_call span i {
+        position: absolute;
+        top: -17px;
+        left: 50%;
+        margin-left: -6px;
+    }
+
+    .mc-btn_put span i {
+        position: absolute;
+        bottom: -17px;
+        left: 50%;
+        margin-left: -6px;
+    }
+
+    .mc-btn {
+        padding: 10px 10px 10px 15px;
+    }
+
+    .mini-chart-btn-cont span.proc {
+        right: 0;
+        left: auto;
+        width: 80px;
+        margin-left: 0;
+        font-size: 11px;
+        padding: 3px;
+    }
+
+    .mini-chart-btn-cont, .chart {
+        height: 160px;
+    }
+
+    .wde-legend {
+        margin-top: 25px;
+    }
+
+    .contact-list li {
+        font-size: 18px;
+    }
+
+    .phone-list li {
+        font-size: 14px;
+    }
+
+    .contact-list i {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 450px){
+    .mac-iframe {
+        width: 270px;
+        height: 227px;
+        padding: 10px 10px 77px 10px;
+    }
+    .ar .phone-list li {
+        font-size: 12px;
+    }
+}
+@media (max-width: 370px){
+    .ar .grafic .grafic-price li b, .ar .grafic .grafic-price li{
+        font-size: 12px;
+    }
+}

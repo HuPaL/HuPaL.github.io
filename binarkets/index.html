@@ -1,0 +1,739 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="Finmax | Лучший брокер бинарных опционов">
+    <meta property="og:image" content="https://finmaxbo.com/templates/Default/images/affilliate-logo.png">
+    <meta property="og:description" content="finmaxbo.com">
+
+    <link rel="icon" href="favicon.ico">
+    <title>Binarkets</title>
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="in/index-styles.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<link href="css/media.css" rel="stylesheet">
+<link href="css/bootstrap-modal.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+<script src="js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script src="js/wow.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="in/index-app.js"></script>
+<script src="js/libs.js"></script>
+<script src="/js/maskinput.js"></script>
+<script src="/js/common.js"></script><script src="/js/onload.js"></script>
+<link href="css/bootstrap-modal.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '151483761982440', {
+            em: 'insert_email_variable,'
+        });
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+     src="https://www.facebook.com/tr?id=151483761982440&ev=PageView&noscript=1"
+     /></noscript>
+     <!-- DO NOT MODIFY -->
+     <!-- End Facebook Pixel Code -->
+
+ </head>
+ <body>
+    <script src="/js/adblock.js"></script>
+    <script>
+        var reloaded = false;
+        var storageReloaded = sessionStorage.getItem('reloaded');
+        if( storageReloaded == 1) {
+            reloaded = true;
+        }
+        if(!document.getElementById('hexmUFfZdoqa') && reloaded == false ) {
+            sessionStorage.setItem('reloaded',1);
+            location.reload();
+        }
+    </script>
+<!--<div class="modal fade" id="modal_book" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4>Подождите! Вы забыли <strong>БЕСПЛАТНО</strong> скачать книгу:</h4>
+                <h5>"Как победить финансовый рынок.<br />10 Лучших стратегий 2016 года"</h5>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-5 text-center"><img src="//promo.finmaxbo.com/free-guide/images/book.png" style="max-width: 100%"/></div>
+                    <div class="col-sm-7 text-modal">
+                        <p class="first-line">41 страница отборного материала, лучших стратегий и живых примеров торговли, совершенно бесплатно.</p>
+                        <p class="last-line">Укажите свой лучший email-адрес и получите книгу гарантированно:</p>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                            <input type="hidden" name="email_passed" id="email_passed" value="0">
+                            <input type="text" name="email_market" id="email_market" class="form-control" placeholder="E-Mail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="subEmail">Скачать</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+<style>
+.flex{
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.justify-between{
+    -webkit-justify-content:space-between;
+    -moz-justify-content:space-between;
+    -ms-justify-content:space-between;
+    justify-content:space-between;
+}
+.align-start{
+    -webkit-align-items:flex-start;
+    -moz-align-items:flex-start;
+    -ms-align-items:flex-start;
+    align-items:flex-start;
+}
+.column{
+    -webkit-flex-direction:column;
+    -moz-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+}
+#modal_book{
+    overflow: auto !important;
+}
+.popap{
+ background-color: rgba(255,255,255,0.5);
+}
+.popap .cont{
+    width: 600px;
+    position: relative;
+    margin: 30px auto;
+    padding: 30px 15px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+.popap .cont hr{
+    height: 1px;
+    background-color: #e5e5e5;
+}
+.cont__center{
+    margin-bottom: 20px;
+}
+.center__text{
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.42857143;
+    color: #333333;
+    font-weight: 400;
+}
+.center__img{
+    width: 219px;
+    margin-right: 20px;
+}
+.text__first{
+    margin-top: 30px;
+    border-bottom: 1px dashed #cecece;
+    padding-bottom: 10px;
+}
+.text__second{
+    margin-bottom: 20px;
+}
+@media (max-width: 620px),(max-device-width: 620px) {
+    .popap .cont{
+        width: 100%;
+        border-radius: 0px;
+        margin: 0px;
+    }
+}
+@media (max-width: 480px),(max-device-width: 480px) {
+    .center__img {
+        width: 95px;
+        margin-right: 0px;
+    }
+    .column-xs{
+        -webkit-flex-direction:column;
+        -moz-flex-direction:column;
+        -ms-flex-direction:column;
+        flex-direction:column;
+    }
+    .align-center-xs{
+        -webkit-align-items:center;
+        -moz-align-items:center;
+        -ms-align-items:center;
+        align-items:center;
+    }
+}
+</style>
+
+<div class="bg-head">
+    <div class="container">
+        <div class="logo">
+            <a href="#" class="animated fadeInLeft wow" data-wow-delay=".3s"><img src="images/logo-dark.png" alt=""></a>
+        </div>
+        <div class="about">
+            <h1 class="animated fadeInLeft wow" data-wow-delay=".5s"><span>Zacznij handel </span> nie ponosząc żadnego ryzyka!
+            </h1>
+            <p class="animated fadeInLeft wow" data-wow-delay=".7s">binarkerts.com proponuje zyskowny handel, nie ponosząc żadnego ryzyka. Zrób prawidłową analizę i twój dochód się zwiększy (nawet do 90%), w przeciwnym razie, zwrócimy Ci zainwestowane środki.</p>
+            <a class="animated fadeInLeft wow" data-wow-delay=".9s" href="https://www.binarkets.com/" target="_blanck"><i class="fa fa-bar-chart"></i>  Zacznij handel</a>
+            <!-- <div class="crofr animated fadeIn wow" data-wow-delay="1.8s"></div> -->
+        </div>
+        <div class="form-block count">
+            <div class="form-box">
+                <form action=""  id="registration">
+                    <input type="hidden" name="submit_reg" value="1">
+                    <input type="hidden" name="fastregister" value="1">
+                    <input type="hidden" name="passgen" value="1">
+                    <input type="hidden" name="landname" value="riskfree">
+
+                    
+                    <div class="title">Dołącz teraz</div>
+                    <div class="clearfix"></div>
+                    <p class="first-input"><input type="text" name="firstname" id="firstname" class="form-control" placeholder="Imię"></p>
+                    <p><input type="text" name="lastname" id="lastname" class="form-control" placeholder="Nazwisko"></p>
+                    <p><input type="text" name="email" id="email" class="form-control" placeholder="E-mail"></p>
+                    <p>
+                        <select name="country" id="country" class="form-control">
+                            <option value='af' data-dcode='93'>Afghanistan (AFG)</option>
+                            <option value='al' data-dcode='355'>Albania (ALB)</option>
+                            <option value='dz' data-dcode='213'>Algeria (DZA)</option>
+                            <option value='as' data-dcode='1684'>American Samoa (ASM)</option>
+                            <option value='ad' data-dcode='376'>Andorra (AND)</option>
+                            <option value='ao' data-dcode='244'>Angola (AGO)</option>
+                            <option value='ai' data-dcode='1264'>Anguilla (AIA)</option>
+                            <option value='ag' data-dcode='1268'>Antigua and Barbuda (ATG)</option>
+                            <option value='ar' data-dcode='54'>Argentina (ARG)</option>
+                            <option value='am' data-dcode='374'>Armenia (ARM)</option>
+                            <option value='aw' data-dcode='297'>Aruba (ABW)</option>
+                            <option value='au' data-dcode='61'>Australia (AUS)</option>
+                            <option value='at' data-dcode='43'>Austria (AUT)</option>
+                            <option value='az' data-dcode='994'>Azerbaijan (AZE)</option>
+                            <option value='bs' data-dcode='1242'>Bahamas (BHS)</option>
+                            <option value='bh' data-dcode='973'>Bahrain (BHR)</option>
+                            <option value='bd' data-dcode='880'>Bangladesh (BGD)</option>
+                            <option value='bb' data-dcode='1246'>Barbados (BRB)</option>
+                            <option value='by' data-dcode='375'>Belarus (BLR)</option>
+
+                            <option value='bz' data-dcode='501'>Belize (BLZ)</option>
+                            <option value='bj' data-dcode='229'>Benin (BEN)</option>
+                            <option value='bm' data-dcode='1441'>Bermuda (BMU)</option>
+                            <option value='bt' data-dcode='975'>Bhutan (BTN)</option>
+                            <option value='bo' data-dcode='591'>Bolivia (BOL)</option>
+                            <option value='ba' data-dcode='387'>Bosnia and Herzegovina (BIH)</option>
+                            <option value='bw' data-dcode='267'>Botswana (BWA)</option>
+                            <option value='bv' data-dcode='55'>Bouvet Island (BVT)</option>
+                            <option value='br' data-dcode='55'>Brazil (BRA)</option>
+                            <option value='io' data-dcode='246'>British Indian Ocean Territory (IOT)</option>
+                            <option value='bn' data-dcode='673'>Brunei Darussalam (BRN)</option>
+                            <option value='bg' data-dcode='359'>Bulgaria (BGR)</option>
+                            <option value='bf' data-dcode='226'>Burkina Faso (BFA)</option>
+                            <option value='bi' data-dcode='257'>Burundi (BDI)</option>
+                            <option value='kh' data-dcode='855'>Cambodia (KHM)</option>
+                            <option value='cm' data-dcode='237'>Cameroon (CMR)</option>
+
+                            <option value='cv' data-dcode='238'>Cape Verde (CPV)</option>
+                            <option value='ky' data-dcode='1345'>Cayman Islands (CYM)</option>
+                            <option value='cf' data-dcode='236'>Central African Republic (CAF)</option>
+                            <option value='td' data-dcode='235'>Chad (TCD)</option>
+                            <option value='cl' data-dcode='56'>Chile (CHL)</option>
+                            <option value='cn' data-dcode='86'>China (CHN)</option>
+                            <option value='co' data-dcode='57'>Colombia (COL)</option>
+                            <option value='km' data-dcode='269'>Comoros (COM)</option>
+                            <option value='cg' data-dcode='242'>Congo (COG)</option>
+                            <option value='cd' data-dcode='243'>Congo, The Democratic Republic (COD)</option>
+                            <option value='ck' data-dcode='682'>Cook Islands (COK)</option>
+                            <option value='cr' data-dcode='506'>Costa Rica (CRI)</option>
+                            <option value='ci' data-dcode='225'>Cote D'Ivoire (CIV)</option>
+                            <option value='hr' data-dcode='385'>Croatia (HRV)</option>
+                            <option value='cu' data-dcode='53'>Cuba (CUB)</option>
+                            <option value='cy' data-dcode='357'>Cyprus (CYP)</option>
+                            <option value='cz' data-dcode='420'>Czech Republic (CZE)</option>
+                            <option value='dk' data-dcode='45'>Denmark (DNK)</option>
+                            <option value='dj' data-dcode='253'>Djibouti (DJI)</option>
+                            <option value='dm' data-dcode='1767'>Dominica (DMA)</option>
+                            <option value='do' data-dcode='1809'>Dominican Republic (DOM)</option>
+                            <option value='ec' data-dcode='593'>Ecuador (ECU)</option>
+                            <option value='eg' data-dcode='20'>Egypt (EGY)</option>
+                            <option value='sv' data-dcode='503'>El Salvador (SLV)</option>
+                            <option value='gq' data-dcode='240'>Equatorial Guinea (GNQ)</option>
+                            <option value='er' data-dcode='291'>Eritrea (ERI)</option>
+                            <option value='ee' data-dcode='372'>Estonia (EST)</option>
+                            <option value='et' data-dcode='251'>Ethiopia (ETH)</option>
+                            <option value='fk' data-dcode='500'>Falkland Islands (Malvinas) (FLK)</option>
+                            <option value='fo' data-dcode='298'>Faroe Islands (FRO)</option>
+                            <option value='fj' data-dcode='679'>Fiji (FJI)</option>
+                            <option value='fi' data-dcode='358'>Finland (FIN)</option>
+
+                            <option value='gf' data-dcode='594'>French Guiana (GUF)</option>
+                            <option value='pf' data-dcode='689'>French Polynesia (PYF)</option>
+                            <option value='ga' data-dcode='241'>Gabon (GAB)</option>
+                            <option value='gm' data-dcode='220'>Gambia (GMB)</option>
+                            <option value='ge' data-dcode='995'>Georgia (GEO)</option>
+                            <option value='de' data-dcode='49'>Germany (DEU)</option>
+                            <option value='gh' data-dcode='233'>Ghana (GHA)</option>
+                            <option value='gi' data-dcode='350'>Gibraltar (GIB)</option>
+                            <option value='gr' data-dcode='30'>Greece (GRC)</option>
+                            <option value='gl' data-dcode='299'>Greenland (GRL)</option>
+                            <option value='gd' data-dcode='1473'>Grenada (GRD)</option>
+                            <option value='gp' data-dcode='590'>Guadeloupe (GLP)</option>
+                            <option value='gu' data-dcode='1671'>Guam (GUM)</option>
+                            <option value='gt' data-dcode='502'>Guatemala (GTM)</option>
+                            <option value='gn' data-dcode='224'>Guinea (GIN)</option>
+                            <option value='gw' data-dcode='245'>Guinea-Bissau (GNB)</option>
+                            <option value='gy' data-dcode='592'>Guyana (GUY)</option>
+                            <option value='ht' data-dcode='509'>Haiti (HTI)</option>
+                            <option value='va' data-dcode='379'>Holy See (Vatican City State) (VAT)</option>
+                            <option value='hn' data-dcode='504'>Honduras (HND)</option>
+                            <option value='hk' data-dcode='852'>Hong Kong (HKG)</option>
+                            <option value='hu' data-dcode='36'>Hungary (HUN)</option>
+                            <option value='is' data-dcode='354'>Iceland (ISL)</option>
+                            <option value='in' data-dcode='91'>India (IND)</option>
+                            <option value='id' data-dcode='62'>Indonesia (IDN)</option>
+                            <option value='ir' data-dcode='98'>Iran, Islamic Republic (IRN)</option>
+                            <option value='iq' data-dcode='964'>Iraq (IRQ)</option>
+                            <option value='ie' data-dcode='353'>Ireland (IRL)</option>
+
+                            <option value='it' data-dcode='39'>Italy (ITA)</option>
+                            <option value='jm' data-dcode='1876'>Jamaica (JAM)</option>
+                            <option value='jp' data-dcode='81'>Japan (JPN)</option>
+                            <option value='jo' data-dcode='962'>Jordan (JOR)</option>
+                            <option value='kz' data-dcode='7'>Kazakhstan (KAZ)</option>
+                            <option value='ke' data-dcode='254'>Kenya (KEN)</option>
+                            <option value='ki' data-dcode='686'>Kiribati (KIR)</option>
+                            <option value='kp' data-dcode='850'>Korea (North) (PRK)</option>
+                            <option value='kr' data-dcode='82'>Korea (South) (KOR)</option>
+                            <option value='kw' data-dcode='965'>Kuwait (KWT)</option>
+                            <option value='kg' data-dcode='996'>Kyrgyzstan (KGZ)</option>
+                            <option value='la' data-dcode='856'>Laos (LAO)</option>
+                            <option value='lv' data-dcode='371'>Latvia (LVA)</option>
+                            <option value='lb' data-dcode='961'>Lebanon (LBN)</option>
+                            <option value='ls' data-dcode='266'>Lesotho (LSO)</option>
+                            <option value='lr' data-dcode='231'>Liberia (LBR)</option>
+                            <option value='ly' data-dcode='218'>Libyan Arab Jamahiriya (LBY)</option>
+                            <option value='li' data-dcode='423'>Liechtenstein (LIE)</option>
+                            <option value='lt' data-dcode='370'>Lithuania (LTU)</option>
+                            <option value='lu' data-dcode='352'>Luxembourg (LUX)</option>
+                            <option value='mo' data-dcode='853'>Macao (MAC)</option>
+                            <option value='mk' data-dcode='389'>Macedonia (MKD)</option>
+                            <option value='mg' data-dcode='261'>Madagascar (MDG)</option>
+                            <option value='mw' data-dcode='265'>Malawi (MWI)</option>
+                            <option value='my' data-dcode='60'>Malaysia (MYS)</option>
+                            <option value='mv' data-dcode='960'>Maldives (MDV)</option>
+                            <option value='ml' data-dcode='223'>Mali (MLI)</option>
+                            <option value='mt' data-dcode='356'>Malta (MLT)</option>
+                            <option value='mh' data-dcode='692'>Marshall Islands (MHL)</option>
+                            <option value='mq' data-dcode='596'>Martinique (MTQ)</option>
+                            <option value='mr' data-dcode='222'>Mauritania (MRT)</option>
+                            <option value='mu' data-dcode='230'>Mauritius (MUS)</option>
+                            <option value='yt' data-dcode='262'>Mayotte (MYT)</option>
+                            <option value='mx' data-dcode='52'>Mexico (MEX)</option>
+                            <option value='fm' data-dcode='691'>Micronesia (FSM)</option>
+                            <option value='md' data-dcode='373'>Moldova (MDA)</option>
+                            <option value='mc' data-dcode='377'>Monaco (MCO)</option>
+                            <option value='mn' data-dcode='976'>Mongolia (MNG)</option>
+                            <option value='me' data-dcode='382'>Montenegro (MNE)</option>
+                            <option value='ms' data-dcode='1664'>Montserrat (MSR)</option>
+                            <option value='ma' data-dcode='212'>Morocco (MAR)</option>
+                            <option value='mz' data-dcode='258'>Mozambique (MOZ)</option>
+                            <option value='mm' data-dcode='95'>Myanmar (MMR)</option>
+                            <option value='na' data-dcode='264'>Namibia (NAM)</option>
+                            <option value='nr' data-dcode='674'>Nauru (NRU)</option>
+                            <option value='np' data-dcode='977'>Nepal (NPL)</option>
+                            <option value='nl' data-dcode='31'>Netherlands (NLD)</option>
+                            <option value='an' data-dcode='599'>Netherlands Antilles (ANT)</option>
+                            <option value='nc' data-dcode='687'>New Caledonia (NCL)</option>
+                            <option value='nz' data-dcode='64'>New Zealand (NZL)</option>
+                            <option value='ni' data-dcode='505'>Nicaragua (NIC)</option>
+                            <option value='ne' data-dcode='227'>Niger (NER)</option>
+                            <option value='ng' data-dcode='234'>Nigeria (NGA)</option>
+                            <option value='nu' data-dcode='683'>Niue (NIU)</option>
+                            <option value='nf' data-dcode='672'>Norfolk Island (NFK)</option>
+                            <option value='mp' data-dcode='1670'>Northern Mariana Islands (MNP)</option>
+                            <option value='no' data-dcode='47'>Norway (NOR)</option>
+                            <option value='om' data-dcode='968'>Oman (OMN)</option>
+                            <option value='pk' data-dcode='92'>Pakistan (PAK)</option>
+                            <option value='pw' data-dcode='680'>Palau (PLW)</option>
+                            <option value='ps' data-dcode='970'>Palestinian Territory (PSE)</option>
+                            <option value='pa' data-dcode='507'>Panama (PAN)</option>
+                            <option value='pg' data-dcode='675'>Papua New Guinea (PNG)</option>
+                            <option value='py' data-dcode='595'>Paraguay (PRY)</option>
+                            <option value='pe' data-dcode='51'>Peru (PER)</option>
+                            <option value='ph' data-dcode='63'>Philippines (PHL)</option>
+                            <option value='pl' data-dcode='48' selected="">Poland (POL)</option>
+                            <option value='pt' data-dcode='351'>Portugal (PRT)</option>
+                            <option value='pr' data-dcode='1787'>Puerto Rico (PRI)</option>
+                            <option value='qa' data-dcode='974'>Qatar (QAT)</option>
+                            <option value='re' data-dcode='262'>Reunion (REU)</option>
+                            <option value='ro' data-dcode='40'>Romania (ROU)</option>
+                            <option value='ru' data-dcode='7'>Russian Federation (RUS)</option>
+                            <option value='rw' data-dcode='250'>Rwanda (RWA)</option>
+                            <option value='sh' data-dcode='290'>Saint Helena (SHN)</option>
+                            <option value='kn' data-dcode='1869'>Saint Kitts and Nevis (KNA)</option>
+                            <option value='lc' data-dcode='1758'>Saint Lucia (LCA)</option>
+                            <option value='pm' data-dcode='508'>Saint Pierre and Miquelon (SPM)</option>
+                            <option value='vc' data-dcode='1784'>Saint Vincent and the Grenadines (VCT)</option>
+                            <option value='ws' data-dcode='685'>Samoa (WSM)</option>
+                            <option value='sm' data-dcode='378'>San Marino (SMR)</option>
+                            <option value='st' data-dcode='239'>Sao Tome and Principe (STP)</option>
+                            <option value='sa' data-dcode='966'>Saudi Arabia (SAU)</option>
+                            <option value='sn' data-dcode='221'>Senegal (SEN)</option>
+                            <option value='rs' data-dcode='381'>Serbia (SRB)</option>
+                            <option value='sc' data-dcode='248'>Seychelles (SYC)</option>
+                            <option value='sl' data-dcode='232'>Sierra Leone (SLE)</option>
+
+                            <option value='sk' data-dcode='421'>Slovakia (SVK)</option>
+                            <option value='si' data-dcode='386'>Slovenia (SVN)</option>
+                            <option value='sb' data-dcode='677'>Solomon Islands (SLB)</option>
+                            <option value='so' data-dcode='252'>Somalia (SOM)</option>
+                            <option value='za' data-dcode='27'>South Africa (ZAF)</option>
+                            <option value='gs' data-dcode='995'>South Georgia and the South Sandwich Islands (SGS)</option>
+                            <option value='es' data-dcode='34'>Spain (ESP)</option>
+                            <option value='lk' data-dcode='94'>Sri Lanka (LKA)</option>
+                            <option value='sd' data-dcode='249'>Sudan (SDN)</option>
+                            <option value='sr' data-dcode='597'>Suriname (SUR)</option>
+                            <option value='sz' data-dcode='268'>Swaziland (SWZ)</option>
+                            <option value='se' data-dcode='46'>Sweden (SWE)</option>
+                            <option value='ch' data-dcode='41'>Switzerland (CHE)</option>
+                            <option value='sy' data-dcode='963'>Syrian Arab Republic (SYR)</option>
+                            <option value='tw' data-dcode='886'>Taiwan (TWN)</option>
+                            <option value='tj' data-dcode='992'>Tajikistan (TJK)</option>
+                            <option value='tz' data-dcode='255'>Tanzania (TZA)</option>
+                            <option value='th' data-dcode='66'>Thailand (THA)</option>
+                            <option value='tl' data-dcode='670'>Timor-Leste (TLS)</option>
+                            <option value='tg' data-dcode='228'>Togo (TGO)</option>
+                            <option value='tk' data-dcode='690'>Tokelau (TKL)</option>
+                            <option value='to' data-dcode='676'>Tonga (TON)</option>
+                            <option value='tt' data-dcode='1868'>Trinidad and Tobago (TTO)</option>
+                            <option value='tn' data-dcode='216'>Tunisia (TUN)</option>
+                            <option value='tr' data-dcode='90'>Turkey (TUR)</option>
+                            <option value='tm' data-dcode='993'>Turkmenistan (TKM)</option>
+                            <option value='tc' data-dcode='1649'>Turks and Caicos Islands (TCA)</option>
+                            <option value='tv' data-dcode='688'>Tuvalu (TUV)</option>
+                            <option value='ug' data-dcode='256'>Uganda (UGA)</option>
+                            <option value='ua' data-dcode='38'>Ukraine (UKR)</option>
+                            <option value='ae' data-dcode='971'>United Arab Emirates (ARE)</option>
+                            <option value='gb' data-dcode='44'>United Kingdom (GBR)</option>
+
+                            <option value='uy' data-dcode='598'>Uruguay (URY)</option>
+                            <option value='uz' data-dcode='998'>Uzbekistan (UZB)</option>
+                            <option value='vu' data-dcode='678'>Vanuatu (VUT)</option>
+                            <option value='ve' data-dcode='58'>Venezuela (VEN)</option>
+                            <option value='vn' data-dcode='84'>Vietnam (VNM)</option>
+                            <option value='vg' data-dcode='1284'>Virgin Islands, British (VGB)</option>
+                            <option value='vi' data-dcode='1340'>Virgin Islands, U.S. (VIR)</option>
+                            <option value='wf' data-dcode='681'>Wallis and Futuna (WLF)</option>
+                            <option value='eh' data-dcode='212'>Western Sahara (ESH)</option>
+                            <option value='ye' data-dcode='967'>Yemen (YEM)</option>
+                            <option value='zm' data-dcode='260'>Zambia (ZMB)</option>
+                            <option value='zw' data-dcode='263'>Zimbabwe (ZWE)</option>
+                        </select>
+                    </p>
+                    <p>
+                        <span class="input-group">
+                            <span class="input-group-addon" id="phoneprefix"></span>
+                            <input type="hidden" name="phoneprefix2" id="phoneprefix2" value="1">
+                            <input type="text" name="phone" id="phone" class="form-control" value="" placeholder="Numer telefonu" aria-describedby="phone">
+                        </span>
+                    </p>
+                    <p class="checkbox-rules"><input type="checkbox" id="checkrules" checked>
+                        <label for="checkrules">Mam ukończone 18 lat i zgadzam się z warunkami oraz definicjami.</label>
+                    </p>
+                    <p>
+                        <button type="submit" class="btn" id="submit">Zarejestrować się</button>
+                    </p>
+                </form>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<div class="grafic">
+    <div class="container grafic-rel">
+        <div class="row">
+            <div class="col-xs-12 col-md-5">
+                <div class="logo-small"><img src="images/logo-dark.png" alt=""></div>
+                <h2>Oceń niepowtarzalny design oraz profesjonalny serwis</h2>
+                <ul>
+                    <li><i class="fa fa-arrow-circle-right"></i> <b>Minimalna inwestycja </b> inwestycja 25$</li>
+                    <li><i class="fa fa-arrow-circle-right"></i> <b>Profesjonalne </b> wsparcie analityków</li>
+                    <li><i class="fa fa-arrow-circle-right"></i> <b>Przejrzyste </b> warunki współpracy</li>
+                    <li><i class="fa fa-arrow-circle-right"></i> <b>Dostęp </b> do Webinarów</li>
+                    <li><i class="fa fa-arrow-circle-right"></i> <b>Dostęp </b> до do materiałów szkoleniowych</li>
+                    <li><i class="fa fa-arrow-circle-right"></i> <b>Dostęp do </b> sygnałów</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-7 col-lg-6 col-lg-offset-1 text-center">
+                <div class="gragic-img">
+                    <img src="images/team.png" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-tranding">
+    <div class="container text-center">
+        <h2 class="animated fadeInDown wow" data-wow-delay="0.1s">Trading jeszcze nigdy nie był tak łatwy!</h2>
+        <div class="grafic">
+            <div class="grafic-block">
+                <ul class="grafic-price">
+                    <li><span>Cena :</span> $100</li>
+                    <li><span>Dochód:</span> $175</li>
+                    <li><span>Zysk:</span> 75%</li>
+                    <li><b>EUR/USD</b></li>
+                </ul>
+                <div class="mini-chart-wrap" data-active-id="1">
+                    <div class="mini-chart-cont js-mc-legend">
+                        <div class="chart-padding">
+                            <div id="chart" class="chart">
+                            </div>
+                        </div>
+                        <div class="mini-chart-btn-cont">
+                            <span class="proc">Zwrot 75%</span>
+                            <button class="mc-btn mc-btn_call" id="call">
+                                <span><i class="fa fa-arrow-up"></i> W górę </span>
+                            </button>
+                            <button class="mc-btn mc-btn_put" id="put">
+                                <span><i class="fa fa-arrow-down"></i> W dół </span>
+                            </button>
+                            <div class="wait-deal-end">
+                                <div class="wde-legend">Transakcja zamknie się:</div>
+                                <div class="wde-timer-cont">
+                                    <div class="chart-timer">
+                                        <span class="chart-time-self"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-finish-popup">
+                        <div class="deal-finish-popup-win">
+                            <h2 class="dfp-head">Transakcja zyskowna!</h2>
+                            <p class="dfp-foot">
+                                <span class="center-foot">Przy inwestycji 100$ Twój dochód będzie 175$</span>
+                                <span class="left-foot"><a class="restart"><i class="fa fa-refresh"></i><span>Nowa transakcja</span></a></span>
+                                <span class="right-foot"><a id="gografic" href="#" class="btn-grafic">Otwórz konto</a></span>
+                            </p>
+                        </div>
+                        <div class="deal-finish-popup-lose">
+                            <h2 class="dfp-head">Transakcja nioeprawidłowa!</h2>
+                            <p class="dfp-foot">
+                                <span class="center-foot">Skorzystaj z transakcji nie ponoasząc rzyzka od binarkets.com i nie ryzykuj Swoim kapitałem. </span>
+                                <span class="left-foot"><a class="restart"><i class="fa fa-refresh"></i><span>Nowa transakcja</span></a></span>
+                                <span class="right-foot"><a id="gograficbonus" href="#" class="btn-grafic">Otrzymać bonus</a></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>
+            <a id="doenter" class="btn btn-red animated fadeInDown wow button-click" data-wow-delay="0.5s" href="#">Zarejestruj się teraz.
+            </a>
+        </p>
+    </div>
+</div>
+<div class="application">
+    <div class="container">
+
+
+
+    </div>
+</div>
+<div class="bg-contact">
+    <div class="container contact">
+        <h2 class="text-center">Kontakty</h2>
+        <div class="col-sm-6 col-xs-12">
+            <ul class="phone-list">
+                <li><i class="fa fa-phone"></i><b>+44 20 3289 88 13</b> - Wielka Britania</li>
+                <li class="phone-list-home"><i class="fa fa-home"></i>New Horizon Building, Ground Floor, 3 1/2 Miles Philip S.W. Goldson Highway, Belize City, Belize</li>
+            </ul>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <ul class="contact-list">
+                <!--li><i class="fa fa-skype"></i> binarkets.com</li-->
+                <li><i class="fa fa-envelope"></i> support@binarkets.com</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="bg-pay">
+    <div class="container">
+        <div class="row text-center">
+            <div class="icon-pay animated fadeInLeft wow" data-wow-delay=".1s">
+                <img src="images/1.png" alt="">
+                <img src="images/2.png" alt="">
+                <img src="images/3.png" alt="">
+                <img src="images/4.png" alt="">
+                <img src="images/5.png" alt="">
+                <img src="images/6.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="footer-title">
+                    <a href="https://www.binarkets.com/">binarkets<span>.com</span></a>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+            <div class="col-md-12">
+                <div class="copirights">
+                    <p>Handel na opcjach binarnych nie odpowiada wszystkim inwestorom i niesie za sobą ryzyko utraty kapitału. Przed rozpoczęciem handlu musisz ustalić swoje cele, ocenić poziom swojej wiedzy i poziom zarządzania kapitałem oraz ryzykiem. Broker binarkets.com proponuje swoje usługi tylko w państwach gdzie niema ograniczeń związanych z handlem na rynkach finansowych za pomocą sieci internetowej. Polecamy przeczytać umowę użytkownika dla uzyskania większej ilości informacji.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="error" id="error">
+    <div class="success-message">
+        <div class="success-inner">
+            <h2>Отправлен запрос на активацию</h2>
+            <p>Запрос на регистрацию принят.</p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    window.__country = 'ua';
+</script>
+
+<script>
+    $(".button-click").click(function() {
+        $("html, body").animate({
+            scrollTop : $(".count").offset().top
+        }, 800);
+    });
+</script>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+            try {
+                w.yaCounter37060375 = new Ya.Metrika({
+                    id: 37060375,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true
+                });
+            } catch (e) {
+            }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () {
+            n.parentNode.insertBefore(s, n);
+        };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/37060375" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-77086517-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+<!--LiveInternet counter-->
+<script type="text/javascript"><!--
+new Image().src = "//counter.yadro.ru/hit;finmax?r" +
+escape(document.referrer) + ((typeof(screen) == "undefined") ? "" :
+    ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
+        screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
+        ";" + Math.random();//--></script><!--/LiveInternet-->
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-77086517-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <script type="text/javascript">
+            var google_tag_params = {
+                dynx_itemid: 'REPLACE_WITH_VALUE',
+                dynx_itemid2: 'REPLACE_WITH_VALUE',
+                dynx_pagetype: 'REPLACE_WITH_VALUE',
+                dynx_totalvalue: 'REPLACE_WITH_VALUE',
+            };
+        </script>
+        <script type="text/javascript">
+            /* <![CDATA[ */
+            var google_conversion_id = 876442463;
+            var google_custom_params = window.google_tag_params;
+            var google_remarketing_only = true;
+            /* ]]> */
+        </script>
+        <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+        </script>
+        <noscript>
+            <div style="display:inline;">
+                <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/876442463/?guid=ON&amp;script=0"/>
+            </div>
+        </noscript>
+
+    </body>
+    </html>

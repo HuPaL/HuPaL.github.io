@@ -1,0 +1,303 @@
+@charset "utf-8";
+/* CSS Document */
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity 0.15s linear;
+    -o-transition: opacity 0.15s linear;
+    transition: opacity 0.15s linear;
+}
+
+.fade.in {
+    opacity: 1;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000000;
+}
+
+.modal-backdrop.fade {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.modal-backdrop.in {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.modal-open #modal_book {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+#modal_book {
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+#modal_book.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+#modal_book.fade .modal-dialog {
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+
+#modal_book .modal-dialog {
+    position: relative;
+    width: auto;
+}
+
+#modal_book .modal-content {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    outline: 0;
+}
+
+#modal_book .modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#modal_book .modal-footer {
+    border-top: 1px solid #e5e5e5;
+}
+
+#modal_book .modal-header .close {
+    margin-top: -2px;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000000;
+    text-shadow: 0 1px 0 #ffffff;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+}
+
+#modal_book .modal-header .close:hover {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+#modal_book .modal-dialog {
+    margin: 100px auto 30px auto;
+}
+
+#modal_book h4 {
+    font-size: 20px;
+    line-height: normal;
+    color: #21093a;
+    text-align: center;
+}
+
+#modal_book h4 strong {
+    color: #d70e0e;
+    text-decoration: underline;
+}
+
+#modal_book h5 {
+    font-size: 26px;
+    line-height: normal;
+    font-weight: 800;
+    color: #21093a;
+    font-style: italic;
+    text-align: center;
+}
+
+#modal_book .text-modal {
+    font-size: 16px;
+    padding-right: 25px;
+}
+
+#modal_book .first-line {
+    font-weight: 400;
+    border-bottom: 1px dashed #cecece;
+    padding-bottom: 10px;
+}
+
+#modal_book .last-line {
+    margin-bottom: 20px;
+}
+
+#modal_book .modal-body > span {
+    color: #717171;
+    padding-bottom: 10px;
+    display: block;
+}
+
+#modal_book .modal-body, #modal_book .modal-footer {
+    padding: 20px 15px 20px 15px;
+    position: relative;
+}
+
+#modal_book .modal-footer button, #modal_book .modal-footer a {
+    background: #e21717;
+    border: 0;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#modal_book .modal-footer button:hover, #modal_book .modal-footer a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+#modal_book .modal-footer .btn + .btn {
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+
+#modal_book .modal-footer .btn-group .btn + .btn {
+    margin-left: -1px;
+}
+
+#modal_book .modal-footer .btn-block + .btn-block {
+    margin-left: 0;
+}
+
+#modal_book .modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+}
+
+@media (min-width: 768px) {
+    #modal_book .modal-dialog {
+        width: 600px;
+        margin: 30px auto;
+    }
+
+    #modal_book .first-line {
+        margin-top: 30px;
+    }
+
+    #modal_book .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    #modal_book .modal-sm {
+        width: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    #modal_book .modal-lg {
+        width: 900px;
+    }
+}
+
+@media (max-width: 767px) {
+    #modal_book .first-line {
+        margin-top: 20px;
+    }
+
+    #modal_book h5 {
+        font-size: 18px;
+    }
+
+    #modal_book .text-modal {
+        font-size: 14px;
+        padding-right: 15px;
+    }
+}
+
+#modal_book .input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+#modal_book .input-group-addon:first-child {
+    border-right: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#modal_book .input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    color: #555555;
+    text-align: center;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 4px 0 0 4px;
+}
+
+#modal_book .input-group-addon, .input-group-btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+#modal_book .input-group .form-control, .input-group-addon, .input-group-btn {
+    display: table-cell;
+}
+
+#modal_book .input-group .form-control {
+    display: block;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 0 3px 3px 0;
+}
